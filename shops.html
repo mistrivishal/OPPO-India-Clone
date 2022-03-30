@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shops</title>
+    <style>
+        body{
+            background-color: lightgrey;
+        }
+        h1{
+            text-align: center;
+        }
+        #master{
+            
+            background-color: white;
+            height:900px;
+            width:90%;
+            margin:auto;
+        }
+        #card>div{
+            font-size: 32px;
+            
+
+        }
+       #image>img{
+            height:100%;
+            width:100%;
+        }
+        #image{
+            width:100%;
+            height:50%
+        }
+        #store>span{
+            font-size: 16px;
+            color:green
+        }
+        #icony{
+            margin-bottom:-5px;
+        }
+        #brand{
+            background-color: darkgreen;
+            width:400px;
+            color:white
+        }
+        #card{
+            padding-left:12px
+        }
+        span{
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+   <h1>ljsgljsdfgljsdl</h1>
+   <div id="master">
+       <div id="image"><img src="https://www.oppo.com/content/dam/oppo/in/mkt/shops/in-banner.jpg" alt=""></div>
+       <div id="card">
+           <div id="address">Store Address:</div>
+           <span class="address"></span><br><br><br>
+           <div id="mobile">Contact:</div>
+           <span class="mobile"></span><br><br><br>
+           <div id="time">Opening Timing:</div>
+           <span class="time"></span><br><br><br>
+           <div id="brand">Open Brand Store & Services</div><br><br><br>
+           <div><a href="" id="store"><img  src="https://www.oppo.com/content/dam/oppo/common/mkt/offline-experience/Route.svg" alt="" id="icony"><span>View Store map</span></a></div>
+       </div>
+   </div>
+</body>
+</html>
+<script>
+ var shopsitems=JSON.parse(localStorage.getItem("shops"))
+ shopsitems.map(function(el){
+     var head= document.querySelector("h1")
+     head.innerText=el.heading 
+     document.querySelector(".address").innerText=el.address
+     document.querySelector(".mobile").innerText=el.mobile
+     document.querySelector(".time").innerText=el.time
+     document.querySelector("#store").href=el.store
+
+
+ })
+</script>
