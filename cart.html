@@ -63,11 +63,16 @@
        padding:10px 80px 10px 80px;
        margin-top:5px;
        margin-left:30px;
-       font-size: 15px;
+       font-size: 16px;
+       font-weight: 700;
        border-radius: none;
        border:1px solid black;
        background-color: white;
        }
+       /* .productslikes button:hover{
+           background-color: #2EC84E;
+           color:white; */
+       /* } */
    .productslikes{
        margin-top: 40px;
      display:grid;
@@ -79,7 +84,7 @@
    .productslikes>div{
        height:500px;
        width:95%;
-        
+        cursor: pointer;
         text-align: left;
         background-color: white;
         
@@ -114,6 +119,7 @@
      display:flex;
      align-items: center;
      font-size: 12px;
+     font-weight: 700;
  }
     </style>
 </head>
@@ -128,7 +134,7 @@
             <img src="https://opsg-statics-gl.heytapimg.com/thor-pc/img/cart.dcd81842.png" alt="">
             <h1>Nothing Yet</h1>
             <p style="margin-top:-10px;">Your cart is empty!</p>
-            <button id="startshop">Start Shopping</button>
+          <a href="store.html"><button id="startshop" >Start Shopping</button></a>  
         </div>
         <div class="productsheadphones">
             <h1>You Might Also Like</h1>
