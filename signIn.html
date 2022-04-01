@@ -281,11 +281,14 @@
 </html>
 
 <script>
-    document.querySelector("#verCode").addEventListener("click", colorchange)
+    document.querySelector("#phone").addEventListener("keypress", colorchange)
     function colorchange(){
-        var code = document.querySelector("#verCode").value;
-        if(code.length==5){
+        var phoneno = document.querySelector("#phone").value;
+        if(phoneno.length>=5){
         document.querySelector("#getcode").style.backgroundColor="#04AA6D";
+        }
+        else{
+            document.querySelector("#getcode").style.backgroundColor="#d9d9d9";
         }
     }
 
