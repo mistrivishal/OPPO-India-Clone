@@ -281,7 +281,13 @@
 </html>
 
 <script>
-
+    document.querySelector("#verCode").addEventListener("click", colorchange)
+    function colorchange(){
+        var code = document.querySelector("#verCode").value;
+        if(code.length==5){
+        document.querySelector("#getcode").style.backgroundColor="#04AA6D";
+        }
+    }
 
      var myUserData = JSON.parse(localStorage.getItem("userCreds")) || [];
 
@@ -297,6 +303,7 @@
            if(myUserData[i].contact === contact){
                if(myUserData[i].password === code){
                    alert("Login Successful");
+                  
                    break;
                }
                else{
