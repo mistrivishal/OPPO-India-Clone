@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <script src="https://kit.fontawesome.com/985c64737c.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<style>
+
+    body {
+        /* background-image: url("https://id.oppo.com/new/images/login-bg.56a249bc.png"); */
+        background-color:#ffffff;
+        font-family: 'Nunito Sans', sans-serif;
+    }
+
+  
+    selectselectcountry option {
+    color: #000;
+    padding: 0 10px;
+}
+
+    #selectLang{
+        width: 120px;
+        padding: 6px 8px 10px 10px;
+        background-color: none;
+        border-radius: 10px;
+        color: #8b8d8f;
+        font-size: 14px;
+        border: none;
+        margin-top: -5px;
+        
+    }
+    #selectlabel{  
+        background-color: #f7f7f7;
+        border: none;      
+        margin-right: 90px;
+        /* border-right: 0.5px solid grey; */
+    }
+    
+    #selectcountry{
+        background-color: #f7f7f7;
+        border: none;
+        cursor: pointer;
+        width: 800px;
+        border-left: #8b8d8f;
+        width: 150px;
+        margin-top: 11px;
+        /* margin-left: 40px; */
+        outline: none;
+        
+
+        
+    }
+   
+
+    #help{
+        color: #8b8d8f;
+        width: 100px;
+        margin-left: 80px;
+        border-right: 1px solid #8b8d8f;
+    }
+   
+    #selectcountry:focus {
+  background-color: #f7f7f7;
+}
+#selectcountry:hover {
+    outline: none;
+}
+
+    #countrydiv{
+        display: flex;
+        background-color: #f7f7f7;
+        /* border: 1px solid black; */
+        border-radius: 9px;
+        width: 350px;
+        margin-left: 72px;
+        height: 30px;
+        justify-content: space-between;
+        padding: 10px 10px 10px 10px;
+        /* text-align: left; */
+        font-size: 12px;
+
+    }
+    countrydiv>div{
+        border: 1px solid red;
+    }
+    
+    #topDiv{
+        display: flex;
+        width: 170px;
+        flex-direction: row;
+        height: 50px;
+        top: 30px;
+        justify-content: flex-end;
+        position: absolute;
+        right: 50px;
+        margin-right: 200px;
+    }
+    #topDiv>div #language{
+        font-size: 15px; 
+        font-family: 'Nunito Sans', sans-serif;
+        border: none; 
+        width: 100px;
+        /* font-weight: bold;  */
+    }
+    #topDiv>div .top{
+        font-size: 15px; 
+        border: none;
+        background: none;
+        /* font-weight: bold;  */
+    }
+   /* #selectcountry{
+        margin-left: -45px;
+   } */
+
+  .head1{
+    margin: auto;
+    text-align: center;
+    margin-top: 150px;
+    margin-left: 80px;
+    font-size: 25px;
+  }
+  .pdiv{
+    margin: auto;
+    text-align: center;
+    /* border: 1px solid red; */
+    width: 35%;
+    height: 550px;
+    padding: 40px;
+    box-sizing: border-box;
+    margin-top: -5px;
+  }
+  .pdiv>div{
+      margin: auto;
+      padding-top: 10px;
+  }
+  .inputs{
+      border-radius: 9px;
+      width: 360px;
+      padding: 8px;
+      background-color: #f7f7f7;
+      padding: 12px 10px 12px 10px;
+      border: none;
+  }
+  button{
+      border-radius: 5px;
+      border: none;
+      background-color: #2ad181;
+      color: #ffffff;
+  
+  }
+  .pAlign{
+      margin-left: 75px;
+      margin-top: 30px;
+      text-align: left;
+      font-size: 12px;
+      width: 350px;
+  }
+  #intags{
+      padding-right: 150px;
+      width: 35%;
+  }
+  #check{
+      padding: 1px;
+  }
+  #cAccount{
+      padding: 12px 7px 12px 7px;
+  }
+  #intags>div{
+      margin: auto;
+      margin-top: 10px;
+  }
+  #code{
+      display: flex;
+      /* border: 1px solid red; */
+      width: 440px;
+      
+      
+  }
+  #verCode{
+      width: 240px;
+      padding-right: 30px;
+      padding-left: 30px;
+      margin-right: 15px;
+  }
+ #checkboxdiv{
+    text-align: center;
+    margin-left: 55px;
+    font-size: 12px;
+    
+    
+ }
+  
+ 
+    
+</style>
+<body>
+   
+    <div id="topDiv"  >
+        <div><button class="top" id="help">Help Center</button></div>
+        
+        <div id="language">
+            <select name="language" id="selectLang" >
+            <option value="1">简体中文</option>
+            <option value="2">註冊帳戶</option> 
+            <option value="3" selected>English</option>      
+            <option value="4">हिंदी</option>
+            <option value="5">Filipino</option>
+            <option value="6">ไทย</option>
+            <option value="7"></option>
+            <option value="8">Melayu</option>
+            <option value="9">Tiếng Việt</option>
+            <option value="10">Indonesia</option>
+            <option value="11">日本語</option>
+        </select>        
+        </div>   
+    </div>
+
+    <form action="" id="form">
+        <h1 class="head1">Create Account</h1>   
+        <div class="pdiv">
+           <div id="countrydiv">
+               <div name="'1">
+            <label for="country" id="selectlabel" >
+                <p>Country/Region</p></label></div>
+                <div name="2">
+               <select name="country" id="selectcountry" >
+                <option value="Country/region" disabled>Country/region</option>
+                <optgroup label="A">
+                  <option value="Angola">Angola</option>
+                  <option value="Anguilla">Anguilla</option>
+                  <option value="Argentina">Argentina</option>
+                  <option value="Andorra">Andorra</option>
+                  <option value="Azerbaizan">Azerbaizan</option>
+                  <option value="Australia">Australia</option>
+                  <option value="Armenia">Armenia</option>
+                  <option value="Austria">Austria</option>
+                  <option value="Algeria">Algeria</option>
+                  <option value="Antigua and Barbuda">Antigua and Barbuda</option>
+                  <option value="Albania">Albania</option>
+                  <option value="Afghanistan">Afghanistan</option>
+                </optgroup>
+                <optgroup label="B">
+                  <option value="Benin">Benin</option>
+                  <option value="Bahamas">Bahamas</option>
+                  <option value="Belize">Belize</option>
+                  <option value="Bahrain">Bahrain</option>
+                  <option value="Belgium">Belgium</option>
+                  <option value="Bermuda">Bermuda</option>
+                  <option value="Bulgaria">Bulgaria</option>
+                  <option value="Brunei">Brunei</option>
+                  <option value="Burkina Faso">Burkina Faso</option>
+                  <option value="Brazil">Brazil</option>
+                  <option value="Belarus">Belarus</option>
+                  <option value="Burundi">Burundi</option>
+                  <option value="Bolivia">Bolivia</option>
+                  <option value="Bangladesh">Bangladesh</option>
+                  <option value="Barbados">Barbados</option>
+                </optgroup>
+                <optgroup label="C">
+                    <option value="Cambodia">Cambodia</option>
+                    <option value="Chile">Chile</option>
+                    <option value="Congo">Congo</option>
+                    <option value="Canada">Canada</option>
+                    <option value="Central Africal Republic">Central African Republic</option>
+                    <option value="Chad">Chad</option>
+                    <option value="Costa Rica">Costa Rica</option>
+                    <option value="Croatia">Croatia</option>
+                    <option value="Cook Islands">Cook Islands</option>
+                    <option value="Cuba">Cuba</option>
+                    <option value="Czech Republic">Czech Republic</option>
+                    <option value="Cameroon">Cameroon</option>
+                    <option value="Cyprus">Cyprus</option>
+                    <option value="Columbia">Colubia</option>
+                    <option value="China">China</option>
+                   
+                </optgroup>
+
+                <optgroup label="D">
+                    <option value="Dominican Republic">Dominican Republic</option>
+                    <option value="Denmark">Denmark</option>
+                </optgroup>
+
+                <optgroup label="E">
+                    <option value="Estonia">Estonia</option>
+                    <option value="EI Salvador">EI Salvador</option>
+                    <option value="Ecuador">Ecuador</option>
+                    <option value="Ethiopia">Ethiopia</option>
+                    <option value="Egypy">Egypt</option>
+                </optgroup>
+                <optgroup label="F">
+                    <option value="Funland">Finland</option>
+                    <option value="Fiji">Fiji</option>
+                    <option value="Frech Polynesia">French Polynesia</option>
+                    <option value="French Guiana">French Guiana</option>
+                    <option value="France">France</option>
+                </optgroup>
+                <optgroup label="G">
+                    <option value="Grenada">Grenada</option>
+                    <option value="Greece">Greece</option>
+                    <option value="Guatemala">Gautemala</option>
+                    <option value="Guyana">Guyana</option>
+                    <option value="Ghana">Ghana</option>
+                    <option value="Georgia">Georgia</option>
+                    <option value="Germany">Germany</option>
+                    <option value="Guinea">Guinea</option>
+                    <option value="Gibraltar">Gibraltar</option>
+                    <option value="Gabon">Gabon</option>
+                    <option value="Guam">Guam</option>
+                    <option value="Gambia">Gambia</option>
+                </optgroup>
+
+                <optgroup label="H">
+                    <option value="Hong Kong,China">Hong Kong,China</option>
+                    <option value="Hungary">Hungary</option>
+                    <option value="Honduras">Honduras</option>
+                    <option value="Haiti">Haiti</option>
+                </optgroup>
+
+                <optgroup label="I">
+                    <option value="Iran">Iran</option>
+                    <option value="Iraq">Iraq</option>
+                    <option value="India" selected>India</option>
+                    <option value="Israel">Israel</option>
+                    <option value="Iceland">Iceland</option>
+                    <option value="Italy">Italy</option>
+                    <option value="Ireland">Ireland</option>
+                    <option value="Indonesia">Indonesia</option>
+                </optgroup>
+
+                <optgroup label="J">
+                    <option value="Jmaica">Jamaica</option>
+                    <option value="Jordan">Jordan</option>
+                    <option value="Japan">Japan</option>
+                </optgroup>
+
+                <optgroup label="K">
+                    <option value="Kazakhstan">Kazakhstan</option>
+                    <option value="Kuwait">Kuwait</option>
+                    <option value="Kenya">Kenya</option>
+                    <option value="Kyrgyzstan">Kyrgyzstan</option>
+                </optgroup>
+
+                <optgroup label=L">
+                    <option value="Latvia">Latvia</option>
+                    <option value="Laos">Laos</option>
+                    <option value="Libya">Libya</option>
+                    <option value="Liechenstein">Liechenstein</option>
+                    <option value="Lebanon">Lebanon</option>
+                    <option value="Liberia">Liberia</option>
+                    <option value="Luxembourg">Luxembourg</option>
+                    <option value="Lesotho">Lesotho</option>
+                    <option value="Lithuania">Lithuania</option>
+                </optgroup>
+
+                <optgroup label="K">
+                    <option value="Mongolia">Mongolia</option>
+                    <option value="Montserrat">Montserrat</option>
+                    <option value="Morocco">Morocco</option>
+                    <option value="Mali">Mali</option>
+                    <option value="Macao,China">Macao,China</option>
+                    <option value="Maldives">Maldives</option>
+                    <option value="Madagascar">Madagascar</option>
+                    <option value="Malawi">Malawi</option>
+                    <option value="Myanmar">Myanmar</option>
+                    <option value="Malaysia">Malaysia</option>
+                    <option value="Mozambique">Mozambique</option>
+                    <option value="Monaco">Monaco</option>
+                    <option value="Moldova">Moldova</option>
+                    <option value="Mauritius">Mauritius</option>
+                    <option value="Malta">Malta</option>
+                    <option value="Mexico">Mexico</option>
+                </optgroup>
+
+                <optgroup label="N">
+                    <option value="North Korea">North Korea</option>
+                    <option value="Nepal">Nepal</option>
+                    <option value="Namibia">Namibia</option>
+                    <option value="Nigeria">Nigeria</option>
+                    <option value="New Zealand">New Zealand</option>
+                    <option value="Nauru">Nauru</option>
+                    <option value="Netherlands">Netherlands</option>
+                    <option value="Niger">Niger</option>
+                    <option value="Nicaragua">Nicaragua</option>
+                    <option value="Norway">Norway</option>
+                </optgroup>
+
+                <optgroup label="O">
+                    <option value="Oman">Oman</option>
+                </optgroup>
+
+                <optgroup label="N">
+                    <option value="Papua New Guinea">Papua New Guinea</option>
+                    <option value="Paraguay">Paraguay</option>
+                    <option value="Portugal">Portugal</option>
+                    <option value="Panama">Panama</option>
+                    <option value="Peru">Peru</option>
+                    <option value="Puerto Rico">Puerto Rico</option>
+                    <option value="Poland">Poland</option>
+                    <option value="Pakistan">Pakistan</option>
+                    <option value="Phillipines">Phillipines</option>
+                </optgroup>
+                
+                <optgroup label="Q">
+                        <option value="Qatar">Qatar</option>
+                </optgroup>
+
+                <optgroup label="R">
+                    <option value="Russia">Russia</option>
+                    <option value="Romania">Romania</option>
+                </optgroup>
+
+                <optgroup label="N">
+                    <option value="Sudan">Sudan</option>
+                    <option value="Syria">Syria</option>
+                    <option value="Solomon Islands">Solomon Islands</option>
+                    <option value="Seychelles">Seychelles</option>
+                    <option value="South Africa">South Africa</option>
+                    <option value="Sao Tome and Principe">Sao Tome and Principe</option>
+                    <option value="Sweden">Sweden</option>
+                    <option value="Sri Lanka">Sri Lanka</option>
+                    <option value="Switzerland">Switzerland</option>
+                    <option value="Spain">Spain</option>
+                    <option value="Saint Lucia">Saint Lucia</option>
+                    <option value="Swaziland">Swaziland</option>
+                    <option value="San Marino">San Marino</option>
+                    <option value="Somali">Somali</option>
+                    <option value="Surinam">Surinam</option>
+                    <option value="South Korea">South Korea</option>
+                    <option value="Slovenia">Slovenia</option>
+                    <option value="Senegal">Senegal</option>
+                    <option value="Singapore">Singapore</option>
+                    <option value="Sierra Leone">Sierra Leone</option>
+                    <option value="Saint Vincent">Saint Vincent</option>
+                    <option value="South Arabia">South Arabia</option>
+                    <option value="Slovakia">Slovakia</option>
+                </optgroup>
+
+                <optgroup label="U">
+                    <option value="Ukraine">Ukraine</option>
+                    <option value="USA">USA</option>
+                    <option value="Uruguay">Uruguay</option>
+                    <option value="United Arab Emirates">United Arab Emirates</option>
+                    <option value="Uzbekistan">Uzbekistan</option>
+                    <option value="Uganda">Uganda</option>
+                    <option value="UNITED KINGDOM">UNITED KINGDOM</option>
+
+                </optgroup>
+
+                <optgroup label="V">
+                    <option value="Vietnam">Vietnam</option>
+                    <option value="Venezuela">Venezuella</option>
+                </optgroup>
+
+                <optgroup label="Y">
+                    <option value="Yemen">Yemen</option>
+                    <option value="Yugoslavia">Yugoslavia</option>
+                </optgroup>
+
+                <optgroup label="Z">
+                    <option value="Zambia">Zambia</option>
+                    <option value="Zaire">Zaire</option>
+                    <option value="Zimbabwe">Zimbabwe</option>
+                </optgroup>
+                
+
+              </select></div>
+               
+
+           </div> 
+           <p class="pAlign">You will be unable to change your country/region after your account is created</p>
+<div id="intags">
+           <div>
+               <input type="text" placeholder="Phone/Email" id="input1" class="inputs">            
+           </div>
+
+           <div id="code">
+               <input type="text" id="verCode" placeholder="Verification code" class="inputs">
+               <button id='#getcode'>Get code</button>
+           </div>
+           <div>
+               <input type="text" placeholder="Password" id="input2" class="inputs">
+              
+           </div>
+          
+        </div>
+        <p class="pAlign">Password must contain 6-16 characters from at least two of the following digits,letters or symbols</p>
+           <div id="checkboxdiv">
+            <input type="checkbox" id="check" value="agree" >
+            <label for="agree">I have read and agree to the <a href="https://muc.heytap.com/document/heytap/oversea/registration/register_en-US.html?language=en-IN&callback=https%3A%2F%2Fwww.oppo.com%2Fin%2F" style="color: #2ad181;"> HeyTapAccount User Agreement</a>
+                and <a href="https://muc.heytap.com/document/heytap/oversea/privacyPolicy/privacyPolicy_en-US.html?language=en-IN&callback=https%3A%2F%2Fwww.oppo.com%2Fin%2F" style="color: #2ad181;"> Privacy Notice</a>
+            </label><br><br>
+            <div><button id="cAccount">Create account</button></div>
+           </div>
+           
+          
+
+
+        </div>
+       
+    </form>
+</body>
+</html>
+
+<script>
+    document.querySelector('#form').addEventListener('submit',createAccount);
+    var myUserData = JSON.parse(localStorage.getItem("userCreds")) || [];
+
+    function createAccount(){
+        event.preventDefault();
+         var mydataObject = {
+             country : document.querySelectorAll("#selectcountry").value,
+             contact : document.querySelector("#input1").value,
+             code : document.querySelector("#verCode").value,
+             password : document.querySelector("#input2").value,
+         };
+         
+         
+         console.log(mydataObject);
+         myUserData.push(mydataObject);
+         console.log(myUserData);
+         localStorage.setItem("userCreds",JSON.stringify(myUserData));
+    }
+    
+</script>
