@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <style>
+        *{
+            font-family: 'Open Sans', sans-serif;
+        }
+
+    h2{
+        text-align:center;
+
+    }
+    body{
+        background-color:#FAFAFA;
+    }
+    .image{
+        height:60px;
+        width:60px;
+        padding: 0px 10px 0px 40px
+    }
+    #deliverytruck{
+        height:60px;
+        width:60px
+    }
+    .freeshipping{
+        display:flex;
+        background-color: white;
+        padding:25px 0px 25px 0px;
+        align-content:center;
+        
+    }
+   .blankimage{
+       margin-top:20px;
+       text-align: center;
+   }
+   #startshop{
+       padding:10px 25px 10px 25px;
+       color:white;
+       background-color: #2EC84E;
+       border-radius: 3px;
+       border:none;
+       margin-top:10px;
+   }
+   .productsheadphones{
+       margin-top:100px;
+
+       text-align: center;
+   }
+   .productslikes img{
+        height:313px;
+        width:100%;
+       
+       
+   }
+   .productslikes button{
+       padding:10px 80px 10px 80px;
+       margin-top:5px;
+       margin-left:30px;
+       font-size: 16px;
+       font-weight: 700;
+       border-radius: none;
+       border:1px solid black;
+       background-color: white;
+       }
+       /* .productslikes button:hover{
+           background-color: #2EC84E;
+           color:white; */
+       /* } */
+   .productslikes{
+       margin-top: 40px;
+     display:grid;
+     grid-template-columns: repeat(4,1fr);
+     grid-template-rows: auto;
+     gap:2px
+     
+   }
+   .productslikes>div{
+       height:500px;
+       width:95%;
+        cursor: pointer;
+        text-align: left;
+        background-color: white;
+        
+   }
+  .productslikes>div h2{
+      text-align: left;
+      margin-left:30px;
+      font-size:20px;
+  }
+  .productslikes>div span{
+      text-align: left;
+      margin-left:30px
+  }
+  .lastelements{
+      margin-top:70px;
+      padding:48px;
+    display: flex;
+    background-color: white;
+    align-items: center;
+   
+   
+    justify-content: space-between;
+  }
+ .lastelements img{
+     height:20px;
+     width:20px;
+     margin:-5px;
+     padding-right:10px
+    
+ }
+ .lastelements div{
+     display:flex;
+     align-items: center;
+     font-size: 12px;
+     font-weight: 700;
+ }
+    </style>
+</head>
+<body>
+    <h2>Cart</h2>
+    <div id="master">
+        <div class="freeshipping">
+            <div class="image"><img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTcsAnl_ErQ_YEzDGpIznEIDNBqxqZlF02Bf1vB1RHVSv_2_yTR" id="deliverytruck"/></div>
+            <p>You are <span style="color:green;">₹499</span> away from free shipping</p>
+        </div>
+        <div class="blankimage">
+            <img src="https://opsg-statics-gl.heytapimg.com/thor-pc/img/cart.dcd81842.png" alt="">
+            <h1>Nothing Yet</h1>
+            <p style="margin-top:-10px;">Your cart is empty!</p>
+          <a href="store.html"><button id="startshop" >Start Shopping</button></a>  
+        </div>
+        <div class="productsheadphones">
+            <h1>You Might Also Like</h1>
+            <div class="productslikes">
+                <div>
+                    <img src="https://opsg-img-cdn-gl.heytapimg.com/epb/202104/25/L1iOPhCL5XEzFilu.png?x-amz-process=image/resize,m_lfit,h_626,w_626" alt="" >
+                    <h2> OPPO Enco X Wireless Headphones </h2>
+                    <span style="font-size:23px;font-weight:bold;"> ₹9,990 </span><s style="color:grey;font-size: 14px;"> ₹19,990 </s><br>
+                    <button>Add to cart</button>
+                </div>
+                <div>
+                    <img src="https://opsg-img-cdn-gl.heytapimg.com/epb/202109/10/sCElpxAQ9t1XKK6N.jpg?x-amz-process=image/resize,m_lfit,h_626,w_626" alt="" >
+                    <h2>  OPPO Enco Free Wireless Headphones White  </h2>
+                    <span style="font-size:23px;font-weight:bold;"> ₹5,990  </span><br>
+                    <button>Add to cart</button>
+                </div>
+                <div>
+                    <img src="https://opsg-img-cdn-gl.heytapimg.com/epb/202109/10/0I41VYniFRJgwo3d.jpg?x-amz-process=image/resize,m_lfit,h_626,w_626" alt="" >
+                    <h2>  OPPO MH319 3.5mm Earphones White  </h2>
+                    <span style="font-size:23px;font-weight:bold;">  ₹399  </span><s style="color:grey;font-size: 14px;">  ₹999  </s><br>
+                    <button>Add to cart</button>
+                </div>
+                <div>
+                    <img src="https://opsg-img-cdn-gl.heytapimg.com/epb/202109/14/AUDGRY6KGD3zOC0c.png?x-amz-process=image/resize,m_lfit,h_626,w_626" alt="" >
+                    <h2>  OPPO Power Bank 18W<br> White  </h2>
+                    <span style="font-size:23px;font-weight:bold;">  ₹1,299  </span><s style="color:grey;font-size: 14px;">  ₹1,999  </s><br>
+                    <button>Add to cart</button>
+                </div>
+            </div>
+       
+        </div>
+        <div class="lastelements">
+            <div><img src="https://opsg-img-cdn-gl.heytapimg.com/epb/202201/12/zQjhCZCDpasB4AB5.jpg" alt="" >
+                <div><span>Free shipping</span></div>
+            </div>
+            <div>
+                <img src="https://opsg-img-cdn-gl.heytapimg.com/epb/202110/22/dVpcwW2hS36AszPS.png" alt="" >
+                <div><span>Official OPPO COD</span></div>
+            </div>
+            <div>
+                <img src="https://opsg-img-cdn-gl.heytapimg.com/epb/202110/22/7Xk17roJoRR5mS9i.png" alt="" >
+                <div><span>100% Secure Payments</span></div>
+            </div>
+            <div>
+                <img src="https://opsg-img-cdn-gl.heytapimg.com/epb/202110/22/bRa6DB9sP9rORhgT.png" alt="" >
+                <div><span>Official Warranty Varies <br>
+                    from 6-12 months</span></div>
+            
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
