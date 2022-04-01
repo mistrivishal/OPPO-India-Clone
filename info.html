@@ -20,9 +20,9 @@
 <body>
     <div id="container">
         <div id="row1">
-            <div>Purchase</div>
-            <div>Specs</div>
-            <div>Highlight</div>
+            <div><a href="#img-info">Purchase</a></div>
+            <div><a href="#container2">Specs</a></div>
+            <div><a href="#poster2">Highlight</a></div>
         </div>
         <hr>
 
@@ -228,17 +228,17 @@
                     <td>Size and Weight</td>
                     <td>Height:  About 16.44cm  Width:  About 7.57cm  Thickness:  About 0.84cm    Weight:  About 189g</td>
                 </tr>
-                <tr>
+                <tr id="chipado">
                     <td> Storage </td>
                     <td> RAM and ROM Capacities:  6GB+128GB  8GB+128GB  RAM Type:  LPDDR4x @ 2133MHz 4×16bit  ROM Specifications:  UFS2.2@ 2Lanes HS-Gear3  Phone Storage Card:  Supported  USB OTG:  Supported </td>
                 </tr>
 
-                <tr>
+                <tr id="chipado">
                     <td> Display </td>
                     <td> Size:  16.73cm (6.59")  Screen Ratio:  90.8%  Resolution:  2412*1080 (FHD+)  Refresh Rate:  60 Hz/90 HZ  5-level adaption supported  Touch Sampling Rate:  Maximum/Default: 180 Hz (5 fingers)  Colour Gamut:  96% NTSC/100% DCI-P3  Color Depth:  16.7 million colors (8-bit)  Pixel Density:  401PPI  Brightness:  Normal mode: 480 nits (Typical) High brightness mode: 600 nits (Typical)  Panel:  LCD (LTPS)  * 6.59" is the diagonal length when the four rounded corners of the screen are extended into right angles. And the actual size is smaller. </td>
                 </tr>
 
-                <tr>
+                <tr id="chipado">
                     <td> Camera </td>
                     <td> Rear:  Main camera: 50MP f/1.8, FOV 77°, 5P lens, AF  Bokeh: 2MP f/2.4, FOV 88.8°, 3P lens, FF  Macro: 2MP f/2.4, FOV 88.8°, 3P lens, FF  Front:  16MP f/2.0, FOV 79.3°, 5P lens  Shooting Mode:  Rear: Photo, Video, Night, Expert, Panorama, Portrait, Time-lapse, Sticker, Slow-motion, Text scanner, Extra HD, Macro and Google Lens  Front: Photo, Video, Panoramic, Portrait, Night, Time-lapse, Sticker </td>
                 </tr>
@@ -266,8 +266,8 @@
 
                
             </table>
-            <button onclick="myFunction()" id="myBtn">Read more ^</button>
-
+            <button  id="myBtn">Read more</button>
+           
             <div id="poster2">
                 <img src="https://opsg-img-cdn-gl.heytapimg.com/epb/202203/23/gQb8ABfJHli7Co3F.jpg" alt="">
                 <img src="https://opsg-img-cdn-gl.heytapimg.com/epb/202203/22/fy5bV31o9K0s0isk.jpg">
@@ -286,7 +286,26 @@
 </body>
 
 </html>
+<script>
+    document.querySelector("#myBtn").addEventListener("click", showthetable)
+    function showthetable(){
+           var showthetables= document.querySelectorAll("#chipado")
+           for(let i=0; i<showthetables.length; i++){
+             var showunique=  showthetables[i].style.display
+         
+           
+            if(showunique=="none"){
+                showthetables[i].style.display="table-row";
+                document.querySelector("#myBtn").innerText="Read less"
+            }
+            else{
+                showthetables[i].style.display="none";
+                document.querySelector("#myBtn").innerText="Read more"
+            }
+        }
+    }
 
+</script>
 <!-- <script>
     function myFunction() {
   var dots = document.getElementById("dots");

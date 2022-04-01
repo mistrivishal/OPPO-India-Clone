@@ -347,6 +347,7 @@ td{
     color: rgba(0,0,0,.75);
 }
 #container2{
+   
     background-color: 
     #fafafa;
     margin-top: 823px;
@@ -372,7 +373,13 @@ td{
     height: auto;
     display: block;
 }
-
+#chipado{
+    display:none;
+}
+#row1 a{
+    text-decoration: none;
+    color: gray;
+}
 
 
 
