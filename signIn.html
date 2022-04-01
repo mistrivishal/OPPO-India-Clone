@@ -134,6 +134,7 @@
 
     #create{
         color: #000000;
+        text-decoration: none;
     }
     .otherways{
         display: flex;
@@ -187,8 +188,7 @@
     </div>
 
     <!-- end of topbasediv -->
-    <button id="signInbutton" onclick="myFunction()"
-    <button style="height: 20px;width:20px;border: 1px solid #72e5d1;">QR Code</button>
+   
 
     <div id="signindiv">
         <h1><img id="oppo" src="https://th.bing.com/th/id/R.867ad8049fcb22098c30af834d8d9a4d?rik=W24rEAY0ysbhjw&riu=http%3a%2f%2fpluspng.com%2fimg-png%2foppo-electronics-vector-png-oppo-electronics-logo-photo-1-6850.gif&ehk=JSX%2fccyobRII%2bpM0P2%2bSnxIE34dYmo28qdrWDogmtF4%3d&risl=&pid=ImgRaw&r=0" alt=""></h1>
@@ -220,7 +220,7 @@
             </form>
                 <div id="loginlinks">
                     <div>Privacy Notice</div>
-                    <div a href="signUpPage.html" id="create">Create account</div>
+                    <a href="signUpPage.html" id="create"><div >Create account</div></a>
                 </div>
                 <div class="otherways">
                     <div class="hrs"><hr></div>               
@@ -281,11 +281,14 @@
 </html>
 
 <script>
-    document.querySelector("#verCode").addEventListener("click", colorchange)
+    document.querySelector("#phone").addEventListener("keypress", colorchange)
     function colorchange(){
-        var code = document.querySelector("#verCode").value;
-        if(code.length==5){
+        var phoneno = document.querySelector("#phone").value;
+        if(phoneno.length>=5){
         document.querySelector("#getcode").style.backgroundColor="#04AA6D";
+        }
+        else{
+            document.querySelector("#getcode").style.backgroundColor="#d9d9d9";
         }
     }
 
@@ -303,7 +306,7 @@
            if(myUserData[i].contact === contact){
                if(myUserData[i].password === code){
                    alert("Login Successful");
-                  
+                   window.location.href="index.html"
                    break;
                }
                else{
