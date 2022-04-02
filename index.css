@@ -137,13 +137,13 @@
 #mid>img
 {
     width: 30%;
-    height: 55%;
+    height: 76%;
     padding-top: 50px;
     padding-left: 50px;
 }
 #text1
 {
-    width: 62%;
+    width: 66%;
     height: 55%;
   margin-top: 50px;
     background-color: black;
@@ -200,7 +200,7 @@ a
 }
 #smartphones1
 {
-    height: 1300px;
+    height: 1400px;
     background-color: #f7f7f7;
     /* display: grid; */
 }
@@ -250,10 +250,11 @@ a
     /* border: 1px solid red; */
     height: 50%;
     display: flex;
+    margin-top: 70px;
 }
 #imgdiv3
 {
-    width: 70%;
+    width: 56%;
     /* border: 1px solid purple; */
     height: 100%;
     padding-left: 5%;
@@ -269,13 +270,13 @@ a
 {
     width: 40%;
     height: 100%;
-    padding-left: 12%;
+    padding-left: 13%;
     /* padding-right: 5%; */
 }
 #imgdiv4>img
 {
     max-width: 120%;
-    max-height: 70%;
+    max-height: 65.5%;
     /* padding-left: 10%; */
 }
 #iotprod
@@ -339,7 +340,7 @@ a
 }
 #iotp2>img
 {
-    width: 80%;
+    width: 93%;
     height: 70%;
     padding-left: 70px;
 }
@@ -405,7 +406,97 @@ a
     height: 400px;
     background-color: #f9f4ec;
     text-align: center;
-    margin-top: -20px;
+    margin-top: -35px;
+}
+#stayintouch>p:nth-child(1){
+    padding-top: 80px;
+    font-size: 35px
+}
+#stay
+{
+    /* width: 20%; */
+    height: 20%;
+    /* border: 1px solid red; */
+    display: flex;
+    margin-top: 30px;
+
+}
+#subp
+{
+    color: grey;
+   
+}
+#stay>div:nth-child(1)
+{
+    width: 5%;
+    background-color: white;
+    height: 70%;
+    margin-left: 308px;
+    text-align: center;
+    padding-bottom: 20px;
+    
+}
+#num
+{
+    padding-top: 5px;
+    padding-left: 17px;
+}
+#stay input
+{
+    width: 270%;
+    background-color: white;
+    height: 70%;
+    border: none;
+    /* margin-left: 308px; */
+}
+#stay>div:nth-child(3)
+{
+    background-color: grey;
+    margin-left: 280px;
+    height: 70%;
+    width: 10%;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+   
+}
+#sub
+{
+    padding-bottom: 50px;
+    padding-right: 5px;
+}
+#stayintouch>p:nth-child(1), #stayintouch>p:nth-child(2)
+{
+    line-height: 15px;
+}
+#stay1
+{
+    display: flex;
+    box-sizing: border-box;
+    margin-left: 310px;
+}
+#stay1>button{
+    border: 1px solid 
+    #a7a4a7;
+    border-radius: 3px;
+    width: 15px;
+    height: 15px;
+    background-color: white;
+}
+#stay1>div{
+    margin-left: 10px;
+    margin-top: -11px;
+}
+#stay1 p
+{
+    color: grey;
+    font-size: 12px;
+}
+#stayintouch>div:last-child{
+    font-size: 12px;
+    text-decoration: underline;
+    text-underline-offset: 0.4em;
+    margin-left: -303px;
 }
 #footer
 {
