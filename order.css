@@ -1,0 +1,35 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+#no{
+    margin: auto;
+    background: none;
+}
+.order{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+.order>h2,.order>h2>i{
+    color: orange;
+    margin-top: 5%;
+}
+.order>p{
+    font-size: 14px;
+    font-weight: 400;
+    font-style: italic;
+    margin-bottom: 28px;
+    color: grey;
+}
+.order>a>button{
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    background-color: #ff9f00;
+    border: 1px  #ff9f00;
+    padding: 8px 12px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.order>a>button:hover{
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
