@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">    
+
+    <style>
+        *{
+            font-family: 'Nunito Sans', sans-serif;
+        }
+        #mastercontainer{
+            width:100%;
+            margin:auto;
+        }
+        body{
+            background-color: #FAFAFA;
+        }
+        #mastercontainer>div:nth-child(1){
+            display:flex;
+            justify-content: start;
+            background-color: white;
+            padding-left: 50px;
+            border-radius: 5px;
+            font-size: 18px;
+        }
+        #mastercontainer>div:nth-child(3){
+            display:flex;
+            justify-content:start;
+            background-color: white;
+            height:50px;
+            padding-left: 50px;
+            align-items: center;
+            border-radius: 5px;
+            font-size: 18px;
+        }
+        #mastercontainer>div:nth-child(5){
+            display:flex;
+            justify-content:start;
+            background-color: white;
+            height:50px;
+            padding-left: 50px;
+            align-items: center;
+            border-radius: 5px;
+            font-size: 18px;
+        }
+        #mastercontainer>div:nth-child(7){
+            display:flex;
+            justify-content:start;
+            /* background-color: white; */
+            padding-left: 50px;
+            align-items: left;
+            border-radius: 10px;
+            font-size: 18px;
+        }
+        #mastercontainer>div:nth-child(9){
+            display:flex;
+            
+            justify-content:start;
+            /* background-color: white; */
+            height:50px;
+            padding-left: 50px;
+            align-items: center;
+            border-radius: 10px;
+            font-size: 18px;
+        }
+        #addaddress{
+           margin-left:900px;
+           color:grey
+        }
+        #couponavailable{
+            margin-left:900px;
+            color:grey;
+        }
+        #mastercontainer>div:nth-child(11){
+            
+           
+            justify-content:start;
+            background-color: white;
+            height:200px;
+            padding-left: 50px;
+            
+            align-items: center;
+            border-radius: 10px;
+            font-size: 18px;
+        }
+        #mastercontainer>div:nth-child(11) p{
+           padding:8px
+        }
+        #paymentstripe{
+            display: flex;
+            justify-content: end;
+        width:100%;
+        height:50px;
+        background-color: white;
+    }
+    #paymentstripe button{
+        height:50px;
+        font-size: 15px;
+        padding-left: 40px;
+        padding-right:40px
+    }
+    #paymentstripe button:nth-child(2){
+       background-color: #008000;
+       color:white;
+        
+        border:none;
+        
+    }
+    #paymentstripe button:nth-child(3){
+       background-color: green;
+       color:white;
+       
+        border:none;
+        margin-left: -4px;
+        
+    }
+    #buyingpricefinal{
+        font-size: 25px;
+        display:inline;
+        padding-right:25px
+    }
+    #paymentstripe div{
+       padding-right: 25px;
+    }
+    #paymentstripe{
+      
+    background: #fafafa;
+    position: fixed;
+    width: 100%;
+    height: 64px;
+    bottom: 0;
+    left: 0;
+    border: 1px solid #f2f2f2;
+    z-index: 6;
+
+    }
+    .productinfo{
+        width: 100%;
+        height: 150px;
+        margin-bottom: 40px;
+        /* background-color: rgb(177, 39, 39); */
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .image1{
+        width: 140px;
+        margin-left: 35px;
+    }
+    .div2{
+        width: 60%;
+        display: grid;
+        justify-content: flex-start;
+        align-items: center;
+        border:2px solid white;
+        margin-left: 30px;
+
+    }
+    .productinfo div h2{
+        font-size: 20px;
+        margin-bottom: -30px;
+        font-weight: 600;
+    }
+    .productinfo div h1{
+        color: #3bf34a;
+    }
+    </style>
+</head>
+<body>
+    <div id="mastercontainer">
+        <div><p>Shipping Address</p><p id="addaddress">+Add address</p></div><br>
+        <div>Billing Address same as current address <input type="checkbox"></div><br>
+        <div>Shipping method</div><br>
+        <div><p>Order Summary</p></div>
+        <div class="productinfo">
+            
+        </div>
+        <div><p>Coupon</p><p id="couponavailable">No coupon is available</p></div><br>
+        <div><p>Item Subtotal</p>
+        <p>Item Discount</p>
+          <p>Shipping Fee</p>
+         <p>Total</p>   </div>
+    </div>
+    <div id="paymentstripe">
+        <div><p id="buyingpricefinal"> </p><br>
+            <span><s class="strike"></s></span>&nbsp<span>(inc. all taxes)</span></div>
+     <button>Place Order</button>
+    </div>
+</body>
+</html>
+<script>
+    var cart = JSON.parse(localStorage.getItem("productdetail"))
+    var maindiv = document.querySelector(".productinfo")
+    var stripprice = document.querySelector("#buyingpricefinal")
+    var stripestrike = document.querySelector(".strike")
+
+    cart.map(function(elem){
+
+        var div1 = document.createElement("div");
+        var image = document.createElement("img");
+        image.setAttribute("class","image1")
+        image.src = elem.image;
+        div1.append(image)
+        var div2 = document.createElement("div");
+        div2.setAttribute("class","div2")
+        var name = document.createElement("h2")
+        name.innerText=`${elem.name} Dynamic Black 4+128GB`;
+        var price = document.createElement("h1");
+        price.style.color = "#3bf34a"
+        price.style.fontSize = "28px"
+        price.innerText= `₹ ${elem.price}`;
+        var price1 = +(elem.price)
+        var Sprice = +(elem.strikeoff);
+        var save = Sprice - price1
+        var saveprice = document.createElement("p")
+        saveprice.innerText= `Saved : ₹ ${save}`
+        console.log(saveprice)
+        var brake = document.createElement("br")
+        div2.append(name,brake,saveprice)
+        maindiv.append(div1,div2,price)
+
+        stripprice.innerText = `₹ ${elem.price}`;
+        stripestrike.innerText = `₹ ${elem.strikeoff}`
+
+    })
+</script>
