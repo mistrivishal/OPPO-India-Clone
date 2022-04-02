@@ -2,40 +2,129 @@
 {
     font-family: 'Nunito Sans',sans-serif;
 }
-#slidingImg
-{
-    
 
+.slideshow-container {
+    height: 600px;
+    position: relative;
+  }
+.slidingImg
+{
     height: 600px;
     box-sizing: border-box;
-  
+    display: none;
 }
-#mainimg
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+/* #p1
+{
+    text-decoration: line-through;
+} */
+.p2
+{
+    text-decoration: line-through;
+    font-size: 20px;
+    padding-left: 15px;
+    font-style: bold;
+}
+.lm
+{
+    padding-left: 15px;
+}
+.mainimg
 {
    width: 100%;
     max-height: 100%;
 }
-#text
+.text
 {
-    margin-top: -350px;
+    margin-top: -330px;
     margin-left: 200px;
     color: black;
-    line-height: 7px;
+    /* line-height: 7px; */
 }
-#intext
+.p1
+{
+    padding-top: 8px;
+}
+#paradiv
+{
+    line-height: 10px;
+}
+.intext
 {
     display: inline-flex;
+    margin-top: -20px;
 }
-#intext1
+.intext1
 {
     display: flex;
+    margin-top: -10px;
 }
-#intext1>button
+.btn1
 {
+    height: 40px;
     width: 80px;
     background-color: black;
     color: white;
     border: none;
+}
+#mainimg1
+{
+    width: 100%;
+    max-height: 100%;
+}
+#p11
+{
+    font-size: 12px;
+    color: grey;
+}
+#text22
+{
+    color: white;
+    margin-top: -330px;
+    margin-left: 200px;
 }
 #mid
 {
@@ -75,7 +164,7 @@
 {
     padding-top: 35px;
 }
-#lm
+#lm1
 {
     width: 130px;
     height: 50px;
@@ -111,7 +200,7 @@ a
 }
 #smartphones1
 {
-    height: 1200px;
+    height: 1300px;
     background-color: #f7f7f7;
     /* display: grid; */
 }
@@ -155,6 +244,39 @@ a
     max-height: 70%;
     padding-left: 7%;
     padding-right: 10px;
+}
+#sm12
+{
+    /* border: 1px solid red; */
+    height: 50%;
+    display: flex;
+}
+#imgdiv3
+{
+    width: 70%;
+    /* border: 1px solid purple; */
+    height: 100%;
+    padding-left: 5%;
+}
+#imgdiv3>img
+{
+    max-width: 100%;
+    max-height: 70%;
+    /* padding-left: 1%; */
+    /* padding-right: 7px; */
+}
+#imgdiv4
+{
+    width: 40%;
+    height: 100%;
+    padding-left: 12%;
+    /* padding-right: 5%; */
+}
+#imgdiv4>img
+{
+    max-width: 120%;
+    max-height: 70%;
+    /* padding-left: 10%; */
 }
 #iotprod
 {
@@ -283,6 +405,7 @@ a
     height: 400px;
     background-color: #f9f4ec;
     text-align: center;
+    margin-top: -20px;
 }
 #footer
 {
@@ -410,5 +533,24 @@ i
     border-bottom: 0.5px solid grey;
     width: 100%;
     padding-bottom: 3px;
+}
+#social
+{
+    /* padding-left: 40px; */
+    border-bottom: 1px solid grey;
+    padding-bottom: 25px;
+    width: 93.5%;
+    margin-left: 35px;
+}
+#social img{
+    max-width:40px;
+    max-height:40px;
+}
+#hidenshowemail
+{
+    color: white;
+    padding-left:40px;
+    padding-top:10px;
+    padding-bottom: 25px;
 }
 
