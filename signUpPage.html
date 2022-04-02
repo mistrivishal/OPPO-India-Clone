@@ -18,11 +18,7 @@
         font-family: 'Nunito Sans', sans-serif;
     }
 
-  
-    selectselectcountry option {
-    color: #000;
-    padding: 0 10px;
-}
+
 
     #selectLang{
         width: 120px;
@@ -38,25 +34,29 @@
     #selectlabel{  
         background-color: #f7f7f7;
         border: none;      
-        margin-right: 90px;
-        /* border-right: 0.5px solid grey; */
+        /* margin-right: 90px;
+        border-right: 0.5px solid grey; */
     }
+    #one{
+        position: relative;
+        left: 5px;
+        border-right: 0.5px solid grey;
+        padding-right: 15px;
+    }
+    
     
     #selectcountry{
         background-color: #f7f7f7;
         border: none;
         cursor: pointer;
-        width: 800px;
+        width: 230px;
+        padding-left: 3px;
         border-left: #8b8d8f;
-        width: 150px;
         margin-top: 11px;
         /* margin-left: 40px; */
-        outline: none;
-        
-
+        outline: none;   
         
     }
-   
 
     #help{
         color: #8b8d8f;
@@ -78,6 +78,7 @@
         /* border: 1px solid black; */
         border-radius: 9px;
         width: 350px;
+
         margin-left: 72px;
         height: 30px;
         justify-content: space-between;
@@ -224,13 +225,15 @@
     <form action="" id="form">
         <h1 class="head1">Create Account</h1>   
         <div class="pdiv">
-           <div id="countrydiv">
-               <div name="'1">
-            <label for="country" id="selectlabel" >
-                <p>Country/Region</p></label></div>
-                <div name="2">
+           <div id="countrydiv" >
+            <div name="'1" id="one">
+                <p>Country/Region</p>
+            </div>
+             
+                <div name="2" id="two">
+                    
                <select name="country" id="selectcountry" >
-                <option value="Country/region" disabled>Country/region</option>
+                <option value="Country/region" disabled>Country or region</option>
                 <optgroup label="A">
                   <option value="Angola">Angola</option>
                   <option value="Anguilla">Anguilla</option>

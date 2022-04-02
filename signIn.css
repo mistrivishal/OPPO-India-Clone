@@ -1,0 +1,258 @@
+
+    body{
+        background-image: url(https://id.oppo.com/new/images/login-bg.56a249bc.png);
+        font-family: 'Nunito Sans', sans-serif;
+    }
+    .topbaseclass{
+        font-size: 14px;
+        /* border: 1px solid red; */
+        margin: auto;
+        width: 900px;
+        display: flex;
+        background-color: none;
+        justify-content: flex-end;
+        margin-top: 30px;
+    }
+    /* #qrcode{
+        width: 100px;
+        height: 100px;
+    } */
+    #oppo{
+        width: 120px;
+        margin: 10px;
+    }
+  
+
+    #verbutton{
+        border: none;
+        color: #7f7f7f;
+        background: none;
+    }
+
+    #js2{
+        border: none;
+        color: #7f7f7f;
+        background: none;
+    }
+
+    .loginCred{
+        background: none;
+        border: none;
+    }
+    .toplang{
+        color: #7f7f7f;
+        font-size: 14px;
+        background-color: none;
+        font-family: 'Nunito Sans', sans-serif;
+        border: none; 
+        margin-left: 20px;
+        background: none;
+    }
+    #signindiv{
+            /* border: 1px solid blue; */
+            width: 55%;
+            height: 700px;
+            margin: auto;
+            text-align: center;
+            margin-top: 60px;
+            font-size: 14px;
+    }
+    .loginCred{
+        background: none;
+        border: none;
+        font-size: 14px;
+    }
+    h1{
+        margin-top: 50px;
+    }
+    #detailsdiv2{
+        margin-top: 30px;
+    }
+    #Password{
+        border-right: 1px solid grey;
+        width: 360px;
+    }
+    #inputCreds{
+       /* border: 1px solid brown; */
+       width: 80%;
+       margin: auto;
+       margin-top: 20px;
+    }
+    input{
+        width: 95%;
+        margin-top: 20px;
+        border-radius: 3px;
+        border: none;
+        padding: 13px 10px 13px 10px;
+        border-radius: 5px;
+        background-color: #f7f7f7;
+    }
+    #code{
+        display: flex;
+        /* justify-content:space-between; */
+        justify-content: flex-end;
+    }
+    #code>input{
+        width: 90%;
+        /* border: 1px solid red; */
+        
+    }
+    #getcode{
+        background-color: #d9d9d9;
+     
+        height: 40px;
+        padding: 1px 30px 1px 30px;
+        margin-top: 20px;
+        margin-left: 10px;
+        border-radius: 5px;
+        right: 10px;
+        color: #fafafa;
+        border: none;
+    }
+    #signinButton{
+        width: 100%;
+        padding: 15px 10px 15px 10px;
+        border-radius: 10px;
+        border: none;
+        background-color: #04aa6d;
+        margin-top: 40px ;
+        color: #f3fdf8;
+
+
+
+    }
+    #loginlinks{
+        display: flex;
+        margin-top: 5px;
+        font-size: 11px;
+        justify-content: space-between;
+    }
+
+    #create{
+        color: #000000;
+    }
+    .otherways{
+        display: flex;
+        /* border: 1px solid rosybrown; */
+        margin: auto;
+        justify-content:space-around;
+        margin-top: 40px;
+        color: #7f7f7f;
+    }
+    .hrs{
+        width: 60px;
+        /* height: 50px; */
+        opacity: 20%;
+    }
+    .otherways>div>span{
+        font-size: 10px;
+    }
+    img{
+        margin-top: 10px;
+        width: 28px;
+        height: 28px;
+    }
+
+    div>span{
+        margin-top: 40px;
+        color: #7f7f7f;
+    }
+
+    #mainDiv{
+        /* border: 1px solid black; */
+        width: 50%;
+        flex: auto;
+        margin: auto;
+        margin-top: 20px;
+        background-color: #ffffff;        
+    }
+
+   #qrcode{
+       margin-top: 60px;
+       margin: auto;
+       height: 160px;
+       width: 160px;
+      
+       border: 0.5px solid grey;
+       padding: 17px 17px 17px 17px;
+       border-radius: 5px;
+    
+   }
+
+   #login{
+       margin: auto;
+       width: 210px;
+       height: 200px;
+    
+    }
+    #insideP{
+        margin-bottom: 30px;
+    }
+
+    p{
+        margin: auto;
+        margin-top: 20px;
+        text-align: center;
+        font-size: 16px;
+        padding: 5px 10px 5px 10px;
+        color: grey; 
+    }
+
+    #passdetailsdiv2{
+        display: none;
+        margin-top: 30px;
+    }
+   
+   
+    
+    #passinputCreds{
+        /* border: 1px solid brown; */
+        width: 79%;
+        margin: auto;
+        margin-top: 20px;
+     }
+     #passcode{
+        display: flex;
+        /* justify-content:space-between; */
+        justify-content: flex-end;
+    }
+    #passcode>input{
+        width: 90%;
+        /* border: 1px solid red; */
+        
+    }
+    #passsigninButton{
+        width: 100%;
+        padding: 15px 10px 15px 10px;
+        border-radius: 5px;
+        border: none;
+        background-color: #c0f1d9;
+        margin-top: 40px ;
+        color: #f3fdf8;
+    
+    }
+    #passloginlinks{
+        display: flex;
+        margin-top: 5px;
+        font-size: 11px;
+        justify-content: space-between;
+    }
+    #passcreate{
+        color: #72e5d1;
+    }
+    .passotherways{
+        display: flex;
+        /* border: 1px solid rosybrown; */
+        margin: auto;
+        justify-content:space-around;
+        margin-top: 40px;
+        color: #7f7f7f;
+    }
+    .passhrs{
+        width: 60px;
+        /* height: 50px; */
+        opacity: 20%;
+    }
+    .passotherways>div>span{
+        font-size: 10px;
+    }
