@@ -136,7 +136,13 @@ i
 #social img{
     max-width:40px;
     max-height:40px;
+    vertical-align: middle;
 }
+/* #social a{
+    background:white;
+    width: 40px;
+    height: 60px !important;
+} */
 #hidenshowemail
 {
     color: white;
