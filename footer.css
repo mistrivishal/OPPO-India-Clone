@@ -1,0 +1,146 @@
+#footer
+{
+    height: 750px;
+    background-color: 
+    #121212;
+}
+#d1
+{
+    height: 60%;
+    /* border: 1px solid red; */
+    /* margin-top: 10px; */
+    display: flex;
+    box-sizing: border-box;
+}
+#d2
+{
+    height: 40%;
+    /* border: 1px solid purple; */
+}
+.footerdiv
+{
+    /* margin-left: 50px; */
+    padding-left: 40px;
+    width: 12%;
+    /* border: 1px solid red; */
+    color: white;
+}
+.footerdiv>a
+{
+    color: grey;
+    text-decoration: none;
+    line-height: 10px;
+    
+}
+.footerdiv p
+{
+    font-family: 'Nunito Sans',sans-serif;
+    font-size: 12px;
+}
+.footerdiv h3
+{
+    font-family: 'Nunito Sans',sans-serif;
+    font-size: 18px;
+}
+#d21
+{
+    /* height: 10%; */
+    /* border: 1px solid red; */
+    display: flex;
+    color: white;
+    /* text-decoration: underline; */
+    /* text-decoration-line: underline;
+    text-underline-offset: 0.5em; */
+    /* text-decoration-color: grey; */
+    padding-left: 40px;
+    /* border: 1px solid red; */
+    
+}
+#d21>div
+{
+    width: 15%;
+}
+#d21>h4:nth-child(2)
+{
+    padding-left: 180px;
+}
+#line
+{
+    border: 1px solid grey;
+    margin-top: 14px;
+    margin-left: 40px;
+    width: 40%;
+    height: -10px;
+}
+#d2>h4
+{
+    color: white;
+    padding-left: 40px;
+}
+i
+{
+    color: white;
+}
+#line1
+{
+    border: 1px solid grey;
+    margin-top: 80px;
+    margin-left: 40px;
+    width: 93%;
+    height: -10px;
+}
+#lastdiv
+{
+   /* border: 1px solid red; */
+   height: 8%;
+   margin-top: 10px; 
+   display: flex;
+   box-sizing: border-box;
+}
+#lastdiv>p
+{
+    font-size: 15px;
+    color: grey;
+    /* padding-bottom: 10px; */
+    padding-left: 40px;
+}
+#lastdiv>p:nth-child(3)
+{
+    color: white;
+    padding-left: 900px;
+    text-decoration: underline;
+    text-underline-offset: 0.2em;
+}
+#d2>p
+{
+    color: grey;
+    font-size: 13px;
+    padding-left: 40px;
+    padding-top: 30px;
+}
+
+#d21 h4
+{
+    border-bottom: 0.5px solid grey;
+    width: 100%;
+    /* padding-bottom: 3px; */
+}
+#social
+{
+    /* padding-left: 40px; */
+    border-bottom: 1px solid grey;
+    padding-bottom: 25px;
+    width: 93.5%;
+    margin-left: 35px;
+}
+#social img{
+    max-width:40px;
+    max-height:40px;
+}
+#hidenshowemail
+{
+    color: white;
+    padding-left:40px;
+    padding-top:10px;
+    padding-bottom: 25px;
+}
