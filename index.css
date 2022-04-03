@@ -189,7 +189,7 @@
 {
     width: 66%;
     height: 55%;
-  margin-top: 50px;
+    margin-top: 50px;
     background-color: black;
     display: flex;
     justify-content: space-around;
@@ -254,6 +254,7 @@ a
     /* border: 1px solid red; */
     display: flex;
     height: 600px;
+    justify-content: space-between;
 }
 #imgdiv1
 {
@@ -261,13 +262,14 @@ a
     height: 100%;
     width: 40%;
     box-sizing: border-box;
-    margin-left: 10px;
+    margin-left: 2%;
 }
 #imgdiv1>img
 {
     max-width: 100%;
     max-height: 70%;
     padding-left: 10%;
+
 }
 #imgdiv1>h3, #imgdiv1>p,#imgdiv2>h3,#imgdiv2>p
 {
@@ -281,13 +283,14 @@ a
 {
     /* border: 1px solid red; */
     width: 60%;
+    margin-left: 7%;
 }
 #imgdiv2>img
 {
     max-width: 100%;
     max-height: 70%;
     padding-left: 7%;
-    padding-right: 10px;
+    /* padding-right: 10px; */
 }
 #sm12
 {
