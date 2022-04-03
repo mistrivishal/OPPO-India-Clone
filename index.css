@@ -68,9 +68,27 @@
     padding-left: 15px;
     font-style: bold;
 }
+.mainpara
+{
+    font-size: 30px;
+}
 .lm
 {
     padding-left: 15px;
+}
+#lm2
+{
+    padding-left: 15px;
+  /* color: white; */
+}
+.spla
+{
+    color: white;
+}
+.spla1
+{
+    color: white;
+    text-decoration: none;
 }
 .mainimg
 {
@@ -79,17 +97,23 @@
 }
 .text
 {
-    margin-top: -330px;
+    margin-top: -350px;
     margin-left: 200px;
     color: black;
     /* line-height: 7px; */
 }
+.twhite
+{
+    color: white
+}
+
 .p1
 {
     padding-top: 8px;
 }
-#paradiv
+.paradiv
 {
+    margin-top: -15px;
     line-height: 10px;
 }
 .intext
@@ -133,6 +157,26 @@
     /* display: grid; */
 
     display: flex;
+}
+.smp
+{
+    font-size: 40px;
+    padding-left: 18px;
+    margin-top: -5px;
+}
+.sma
+{
+    margin-top: -5px;
+    padding-right: 17px;
+}
+.imgp
+{
+    font-weight: bold;
+    font-size: 15px;
+}
+.imgp1
+{
+    font-size: 14px;
 }
 #mid>img
 {
@@ -276,7 +320,7 @@ a
 #imgdiv4>img
 {
     max-width: 120%;
-    max-height: 65.5%;
+    max-height: 60%;
     /* padding-left: 10%; */
 }
 #iotprod
@@ -310,14 +354,14 @@ a
 {
     width: 70%;
     height: 70%;
-    padding-left: 70px;
+    padding-left: 56px;
 }
 #iotp1>div
 {
     padding-top: -5px;
     height: 29%;
     width: 70%;
-    margin-left: 70px;
+    margin-left: 56px;
     line-height: 10px;
 }
 #iotp11
@@ -376,11 +420,11 @@ a
     grid-row: auto; */
   
 }
-#exploreoppo>h1
+#exploreoppo>p
 {
     padding-left: 60px;
     padding-top: 120px;
-    
+    font-size: 30px;
 }
 #e1
 {
@@ -500,9 +544,12 @@ a
 }
 #footer
 {
-    height: 750px;
+    width: 100%;
+    height: 800px;
     background-color: 
     #121212;
+    bottom: 0;
+    left: 0%;
 }
 #d1
 {
@@ -511,9 +558,18 @@ a
     /* margin-top: 10px; */
     display: flex;
     box-sizing: border-box;
+    width: 100%;
+    justify-content: space-around;
+    padding: 50px 50px 0px 0px;
 }
 #d2
 {
+    width: 100%;
+    margin-top: -40px;
+    
+    /* margin-bottom: -100px; */
+    padding: 50px 50px 0px 40px;
+    /* border: 1px solid purple; */
     height: 40%;
     /* border: 1px solid purple; */
 }
@@ -521,7 +577,7 @@ a
 {
     /* margin-left: 50px; */
     padding-left: 40px;
-    width: 12%;
+    /* width: 12%; */
     /* border: 1px solid red; */
     color: white;
 }
@@ -530,7 +586,7 @@ a
     color: grey;
     text-decoration: none;
     line-height: 10px;
-    
+    font-weight: 600;
 }
 .footerdiv p
 {
@@ -544,6 +600,7 @@ a
 }
 #d21
 {
+    width: 100%;
     /* height: 10%; */
     /* border: 1px solid red; */
     display: flex;
@@ -552,9 +609,9 @@ a
     /* text-decoration-line: underline;
     text-underline-offset: 0.5em; */
     /* text-decoration-color: grey; */
-    padding-left: 40px;
+    padding-left: 20px;
     /* border: 1px solid red; */
-    
+    margin-top: -50px;
 }
 #d21>div
 {
@@ -591,26 +648,40 @@ i
 }
 #lastdiv
 {
-   /* border: 1px solid red; */
-   height: 8%;
-   margin-top: 10px; 
-   display: flex;
-   box-sizing: border-box;
+    width: 95%;
+    /* border: 1px solid red; */
+    margin-top: 10px; 
+    display: flex;
+    box-sizing: border-box;
+    color: rgb(206, 206, 206);
+    justify-content: space-between;
+    padding-left: 15px;
+    font-size: 13px;
+    padding-top: 20px;
+}
+#lastdiv>div:first-child{
+    width: 35%;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 25px;
+}
+#lastdiv>div:first-child p{
+    text-align: left;
 }
 #lastdiv>p
 {
     font-size: 15px;
     color: grey;
     /* padding-bottom: 10px; */
-    padding-left: 40px;
+    /* padding-left: 40px; */
 }
-#lastdiv>p:nth-child(3)
+/* #lastdiv>p:nth-child(3)
 {
     color: white;
     padding-left: 900px;
     text-decoration: underline;
     text-underline-offset: 0.2em;
-}
+} */
 #d2>p
 {
     color: grey;
@@ -628,10 +699,12 @@ i
 #social
 {
     /* padding-left: 40px; */
+   /* margin-left:-400px; */
     border-bottom: 1px solid grey;
-    padding-bottom: 25px;
-    width: 93.5%;
-    margin-left: 35px;
+    padding-bottom: 20px;
+    width: 97%;
+    margin-left: 10px;
+    /* border: 1px solid red; */
 }
 #social img{
     max-width:40px;
@@ -640,8 +713,14 @@ i
 #hidenshowemail
 {
     color: white;
-    padding-left:40px;
-    padding-top:10px;
-    padding-bottom: 25px;
+    padding-left:20px;
+    margin-top: -10px;
+    /* padding-top:10px; */
+    /* padding-bottom: 25px; */
+}
+#d2>p:last-child
+{
+    margin-top: -20px;
+    margin-left: -27px;
 }
 
