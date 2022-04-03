@@ -9,17 +9,172 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">    
 
-    <script src="https://kit.fontawesome.com/11e71d58fc.js" crossorigin="anonymous"></script>
+    <style>
+        *{
+            font-family: 'Nunito Sans', sans-serif;
+        }
+        #mastercontainer{
+            width:100%;
+            margin:auto;
+        }
+        body{
+            background-color: #FAFAFA;
+        }
+        #mastercontainer>div:nth-child(1){
+            display:flex;
+            justify-content: start;
+            background-color: white;
+            padding-left: 50px;
+            border-radius: 5px;
+            font-size: 18px;
+        }
+        #mastercontainer>div:nth-child(3){
+            display:flex;
+            justify-content:start;
+            background-color: white;
+            height:50px;
+            padding-left: 50px;
+            align-items: center;
+            border-radius: 5px;
+            font-size: 18px;
+        }
+        #mastercontainer>div:nth-child(5){
+            display:flex;
+            justify-content:start;
+            background-color: white;
+            height:50px;
+            padding-left: 50px;
+            align-items: center;
+            border-radius: 5px;
+            font-size: 18px;
+        }
+        #mastercontainer>div:nth-child(7){
+            display:flex;
+            justify-content:start;
+            /* background-color: white; */
+            padding-left: 50px;
+            align-items: left;
+            border-radius: 10px;
+            font-size: 18px;
+        }
+        #mastercontainer>div:nth-child(9){
+            display:flex;
+            
+            justify-content:start;
+            /* background-color: white; */
+            height:50px;
+            padding-left: 50px;
+            align-items: center;
+            border-radius: 10px;
+            font-size: 18px;
+        }
+        #addaddress{
+           margin-left:900px;
+           color:grey
+        }
+        #couponavailable{
+            margin-left:900px;
+            color:grey;
+        }
+        #mastercontainer>div:nth-child(11){
+            
+           
+            justify-content:start;
+            background-color: white;
+            height:200px;
+            padding-left: 50px;
+            
+            align-items: center;
+            border-radius: 10px;
+            font-size: 18px;
+        }
+        #mastercontainer>div:nth-child(11) p{
+           padding:8px
+        }
+        #paymentstripe{
+            display: flex;
+            justify-content: end;
+        width:100%;
+        height:50px;
+        background-color: white;
+    }
+    #paymentstripe button{
+        height:50px;
+        font-size: 15px;
+        padding-left: 40px;
+        padding-right:40px
+    }
+    #paymentstripe button:nth-child(2){
+       background-color: #008000;
+       color:white;
+        
+        border:none;
+        
+    }
+    #paymentstripe button:nth-child(3){
+       background-color: green;
+       color:white;
+       
+        border:none;
+        margin-left: -4px;
+        
+    }
+    #buyingpricefinal{
+        font-size: 25px;
+        display:inline;
+        padding-right:25px
+    }
+    #paymentstripe div{
+       padding-right: 25px;
+    }
+    #paymentstripe{
+      
+    background: #fafafa;
+    position: fixed;
+    width: 100%;
+    height: 64px;
+    bottom: 0;
+    left: 0;
+    border: 1px solid #f2f2f2;
+    z-index: 6;
 
+    }
+    .productinfo{
+        width: 100%;
+        height: 150px;
+        margin-bottom: 40px;
+        /* background-color: rgb(177, 39, 39); */
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .image1{
+        width: 140px;
+        margin-left: 35px;
+    }
+    .div2{
+        width: 60%;
+        display: grid;
+        justify-content: flex-start;
+        align-items: center;
+        border:2px solid white;
+        margin-left: 30px;
+
+    }
+    .productinfo div h2{
+        font-size: 20px;
+        margin-bottom: -30px;
+        font-weight: 600;
+    }
+    .productinfo div h1{
+        color: #3bf34a;
+    }
+    </style>
+    <link rel="stylesheet" href="footer.css">
     <link rel="stylesheet" href="navigation.css">
 </head>
 <body>
-    <div class="siteOrigin">
-        <span>Select your country or region:</span>
-        <a href="index.html"><span class="Stay">Stay on current site</span></a>
-        <a href="Choosesitepage.html"><span class="Select">Select another site</span></a>
-    </div>
-    <div id="navbar">
+    <div id="navbar" style="margin-top:0px">
         <div class="logo">
             <a href="index.html"><img src="https://logo-base.com/logo/oppo_logo_black_png_white.png" alt=""/></a>
         </div>
@@ -47,7 +202,7 @@
                                     <div>
                                         <li>
                                             <div class="find">
-                                                <a href="findXpage.html">
+                                                <a href="FindXpage.html">
                                                     <img src="https://image.oppo.com/content/dam/oppo/common/mkt/v2-2/navigation/find-series/find-x2/Find%20X2-navigation-Black-v2.png" alt="">
                                                     <p>OPPO FIND X2</p>
                                                 </a>
@@ -242,7 +397,7 @@
             </div>
         </nav>
         <div class="cart">
-            <a href="signIn.html"><img src="https://cdn1.iconfinder.com/data/icons/flat-web-browser/100/search-512.png" alt=""/></a>
+            <a href="#"><img src="https://cdn1.iconfinder.com/data/icons/flat-web-browser/100/search-512.png" alt=""/></a>
             <a href="cart.html"><img src="https://berceo.com/wp-content/uploads/2022/03/bag.png" alt=""/></a>
             <a href="signUpPage.html"><img src="https://e7.pngegg.com/pngimages/781/687/png-clipart-refilmery-computer-icons-avatar-user-profile-avatar-heroes-rim.png" alt=""/></a>
         </div>
@@ -263,6 +418,156 @@
         <a href="https://play.google.com/store/apps/details?id=com.heytap.store"><img src="https://opsg-img-cdn-gl.heytapimg.com/epb/202110/25/oBVfIuEfrXMKK6k7.svg" alt=""><div>Download App</div></a>
         <a href="#"><img src="https://opsg-img-cdn-gl.heytapimg.com/epb/202110/25/9qVnQIR71eDz8Hij.svg" alt=""><div>Sign In</div></a>
         <a href="https://chat-support-in.oppo.com/chat/h5/v2/index.html?sysnum=a4220a22f11648ceaa5f66cddc2cc010&channelid=2"><img src="https://opsg-img-cdn-gl.heytapimg.com/epb/202110/25/7QWTez0YCF5WYO34.svg" alt=""> <div>Live Chat</div></a>
-    </div>    
+    </div>
+    <div id="mastercontainer">
+        <div><p>Shipping Address</p><p id="addaddress">+Add address</p></div><br>
+        <div>Billing Address same as current address <input type="checkbox"></div><br>
+        <div>Shipping method</div><br>
+        <div><p>Order Summary</p></div>
+        <div class="productinfo">
+            
+        </div>
+        <div><p>Coupon</p><p id="couponavailable">No coupon is available</p></div><br>
+        <div><p>Item Subtotal</p>
+        <p>Item Discount</p>
+          <p>Shipping Fee</p>
+         <p>Total</p>   </div>
+    </div>
+    <div id="paymentstripe">
+        <div><p id="buyingpricefinal"> </p><br>
+            <span><s class="strike"></s></span>&nbsp<span>(inc. all taxes)</span></div>
+     <button onclick="location.href='order.html'">Place Order</button>
+    </div>
+    <div id="footer">
+        <div id="d1">
+            <div class="footerdiv">
+                <h3>Smartphones</h3>
+              <a href="dummy.html"><p>OPPO Reno7 Pro 5G</p></a>
+              <a href="dummy.html"><p>OPPO Reno7 5G</p></a>
+              <a href="dummy.html"><p>OPPO Reno6 Pro 5G</p></a>
+              <a href="dummy.html"><p>OPPO Reno6 5G</p></a>
+              <a href="dummy.html"><p>OPPO F19 Pro+ 5G</p></a>
+              <a href="dummy.html"><p>OPPO F19 Pro</p></a>
+              <a href="dummy.html"><p>OPPO F19s</p></a>
+              <a href="dummy.html"><p>OPPO F19</p></a>
+              <a href="dummy.html"><p>OPPO A96</p></a>
+              <a href="dummy.html"><p>OPPO A76</p></a>
+              <a href="dummy.html"><p>OPPO A55</p></a>
+              <a href="dummy.html"><p>OPPO A16e</p></a>
+              <a href="dummy.html"><p>OPPO A16k</p></a>
+              <a href="dummy.html"><p>OPPO K10</p></a>
+              <a href="dummy.html" ><p>See All Smartphones</p></a>
+           
+            </div>
+            <div class="footerdiv">
+                <h3>IoT Products</h3>
+                <a href="dummy.html"><p>OPPO Enco Air2</p></a>
+                <a href="dummy.html"><p>OPPO Watch Free</p></a>
+                <a href="dummy.html"><p>OPPO Enco M32</p></a>
+                <a href="dummy.html"><p>OPPO Enco Buds</p></a>
+                <a href="dummy.html"><p>OPPO Band Style</p></a>
+                <a href="dummy.html"><p>OPPO Enco X</p></a>
+                <a href="dummy.html"><p>OPPO Watch</p></a>
+                <a href="dummy.html"><p>OPPO Enco W51</p></a>
+                <a href="dummy.html"><p>OPPO Enco W11</p></a>
+                <a href="dummy.html"><p>OPPO Enco Free</p></a>
+                <a href="dummy.html"><p>OPPO Enco W31</p></a>
+                <a href="dummy.html"><p>OPPO Enco M31</p></a>
+            </div>
+            <div class="footerdiv">
+                <h3>Special Offers</h3>
+                <a href="dummy.html"><p>Education Discount</p></a>
+                <a href="dummy.html"><p>Strike a Bargain</p></a>
+                
+            </div>
+            <div class="footerdiv">
+                <h3>Support</h3>
+                <a href="dummy.html"><p>Contact Us</p></a>
+                <a href="dummy.html"><p>Service Center</p></a>
+                <a href="dummy.html"><p>Warranty Check</p></a>
+                <a href="dummy.html"><p>OPPO Update</p></a>
+                <a href="dummy.html"><p>Terms and Conditions</p></a>
+                <a href="dummy.html"><p>E-waste Management</p></a>
+                <a href="dummy.html"><p>Security Response</p></a>
+                <a href="dummy.html"><p>Center</p></a>
+                <a href="dummy.html"><p>Warranty Policy</p></a>
+                <a href="dummy.html"><p>Investor</p></a>
+            </div>
+            <div class="footerdiv">
+                <h3>About OPPO</h3>
+                <a href="dummy.html"><p>Our Story</p></a>
+                <a href="dummy.html"><p>Technology</p></a>
+                <a href="dummy.html"><p>Newsroom</p></a>
+                <a href="dummy.html"><p>Campaign</p></a>
+                <a href="dummy.html"><p>Career</p></a>
+            
+            </div>
+            <div class="footerdiv">
+                <h3>OPPO Community</h3>
+                <a href="dummy.html"><p>OPPO Community</p></a>
+            </div>
+        </div>
+        <div id="d2">
+            <div id="d21">
+                <div><h4 onclick="hideshowfun()">Email</h4></div>
+                <div><h4 onclick="hidefun()">Hotline</h4></div>
+            </div>
+            <div id="hidenshowemail">
+                <p>support.in@oppo.com</p>
+            </div>
+             
+             <div id="social">
+                <div>
+                    
+                    <a href="https://www.facebook.com/OPPOCareIN/?brand_redir=1826516244270990" target="_blank"><img src="https://support.oppo.com/content/dam/oppo/common/support/contact-us/Facebook-solid.svg" alt=""></a>
+                    <a href="https://twitter.com/OPPOCareIN" target="_blank"><img src="https://support.oppo.com/content/dam/oppo/common/support/contact-us/Twitter-solid.svg" alt=""></a>
+                    <a href="https://www.instagram.com/oppoindia/" target="_blank"><img src="https://support.oppo.com/content/dam/oppo/common/support/contact-us/Instagram.svg" alt=""></a>
+                    <a href="https://www.youtube.com/channel/UCMoJmRNcc-n8WdesyjQ6i_g" target="_blank"><img src="https://support.oppo.com/content/dam/oppo/common/support/contact-us/Youtube-solid.svg" alt=""></a>
+                </div>
+            </div>
+            <div id="lastdiv">
+                <p>Privacy</p>
+                <p>Terms of Use</p>
+                <p>India(English)</p>
+            </div>
+            <p>Copyright © 2004-2022 OPPO. All rights reserved.</p>
+        </div>
+    </div>
 </body>
 </html>
+<script>
+    var cart = JSON.parse(localStorage.getItem("productdetail"))
+    var maindiv = document.querySelector(".productinfo")
+    var stripprice = document.querySelector("#buyingpricefinal")
+    var stripestrike = document.querySelector(".strike")
+
+    cart.map(function(elem){
+
+        var div1 = document.createElement("div");
+        var image = document.createElement("img");
+        image.setAttribute("class","image1")
+        image.src = elem.image;
+        div1.append(image)
+        var div2 = document.createElement("div");
+        div2.setAttribute("class","div2")
+        var name = document.createElement("h2")
+        name.innerText=`${elem.name} Dynamic Black 4+128GB`;
+        var price = document.createElement("h1");
+        price.style.color = "#3bf34a"
+        price.style.fontSize = "28px"
+        price.innerText= `₹ ${elem.price}`;
+        var price1 = +(elem.price)
+        var Sprice = +(elem.strikeoff);
+        var save = Sprice - price1
+        var saveprice = document.createElement("p")
+        saveprice.innerText= `Saved : ₹ ${save}`
+        console.log(saveprice)
+        var brake = document.createElement("br")
+        div2.append(name,brake,saveprice)
+        maindiv.append(div1,div2,price)
+
+        stripprice.innerText = `₹ ${elem.price}`;
+        stripestrike.innerText = `₹ ${elem.strikeoff}`
+
+    })
+</script>

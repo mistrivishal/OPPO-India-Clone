@@ -4,88 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shops</title>
+    <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&family=Nunito+Sans:wght@200;300;400;600;700;800&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">    
 
     <script src="https://kit.fontawesome.com/11e71d58fc.js" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="support.css">
+
     <link rel="stylesheet" href="footer.css">
 
-    <style>
-        *{
-            box-sizing: border-box;
-            font-family: 'Nunito Sans', sans-serif;
-        }
-        body{
-            background-color: lightgrey;
-        }
-        h1{
-            text-align: center;
-        }
-        #master{
-            display:flex;
-            background-color: white;
-            height:auto;
-            width:90%;
-            margin:auto;
-            margin-top: 10%;
-            padding: 30px;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 20%;
-        }
-        #address,#mobile,#time{
-            /* font-size: 14px; */
-            margin-top: -30px;
-            margin-bottom: 0px;
-        }
-        .address,.mobile,.time{
-            font-size: 14px;
-            margin-top: 0px;
-        }
-        #card>div{
-            font-size: 18px;
-            font-weight: 700;
-        }
-        #image{
-            display: flex;
-            justify-content: flex-end;
-            width: 30%;
-        }
-        #image>img{
-            width:90%;
-        }
-        #image{
-            width:100%;
-            height:50%
-        }
-        #store{
-            margin-top: -60px;
-        }
-        #store>span{
-            font-size: 12px;
-            color:green
-        }
-        #icony{
-            margin-bottom:-5px;
-        }
-        #brand{
-            background-color: darkgreen;
-            width:50%;
-            color:white;
-            margin-bottom: 0px;
-        }
-        #card{
-            display: grid;
-            padding-left:12px;
-        }
-        span{
-            font-size: 18px;
-        }
-    </style>
+
 </head>
 <body>
     <div id="navbar1" style="position: fixed;"> 
@@ -318,27 +248,212 @@
             </a>
         </div>
     </div>
-
-   <h1>OPPO Exclusive Showroom</h1>
-   <div id="master">
-       <div id="card">
-           <div id="address">Store Address:</div>
-           <span class="address"></span><br><br><br>
-           <div id="mobile">Contact:</div>
-           <span class="mobile"></span><br><br><br>
-           <div id="time">Opening Timing:</div>
-           <span class="time"></span><br><br><br>
-           <div id="brand" style="font-size: 12px;font-weight: 500;">Open Brand Store & Services</div><br>
-           <div><a href="" id="store"><img  src="https://www.oppo.com/content/dam/oppo/common/mkt/offline-experience/Route.svg" alt="" id="icony"><span>View Store map</span></a></div>
-       </div>
-       <div id="image">
-           <img src="https://www.oppo.com/content/dam/oppo/in/mkt/shops/in-banner.jpg" alt="">
+    <div class="supportbanner">
+        <!-- <img src="https://support.oppo.com/content/dam/oppo/common/support/welcome-to-oppo-support/PC_banner.jpg" alt=""> -->
+        <h1>Welcome to OPPO Support</h1>
+        <p>Friendly，Convenient & Professional</p>
+        <div class="input">
+            <span><label for="query"><img src="https://cdn1.iconfinder.com/data/icons/flat-web-browser/100/search-512.png" alt=""></label></span>
+                <input type="text" name="query" placeholder="Please enter your question">
         </div>
-   </div>
+        <div class="infopages">
+            <p>Find my OPPO</p>
+            <p>Black Screen</p>
+            <p>Software Update</p>
+            <p>Call Recording</p>
+            <p>Game Space</p>
+            <p>OPPO App Marke</p>
+        </div>
+    </div>
+    <div class="servicehead">
+        <h1>Convenient Services</h1>
+        <p>Easy access to your support services!</p>
+    </div>
+    <div class="services">
+        <div>
+            <img src="https://support.oppo.com/content/dam/oppo/common/support/convenient-services/Guarantee-service.svg" alt="">
+            <h2>Authenticity and Warranty Status Check</h2>
+            <p>Check the warranty and authenticity of your device</p>
+        </div>
+        <div>
+            <img src="https://support.oppo.com/content/dam/oppo/common/support/convenient-services/Spare-parts-price.svg" alt="">
+            <h2>Spare part price</h2>
+            <p>Get the spare parts price for non-warranty repair</p>
+        </div>
+        <div>
+            <img src="https://support.oppo.com/content/dam/oppo/common/support/convenient-services/Outlet-query-and-appointment.svg" alt="">
+            <h2>Service center  </h2>
+            <p>Find the nearest OPPO service center</p>
+        </div>
+        <div>
+            <img src="https://support.oppo.com/content/dam/oppo/common/support/convenient-services/Maintenance-progress-query.svg" alt="">
+            <h2>Repair Status</h2>
+            <p>Track your repair status</p>
+        </div>
+        <div>
+            <img src="https://support.oppo.com/content/dam/oppo/common/support/convenient-services/software-upgrade.svg" alt="">
+            <h2>Software Updates</h2>
+            <p>Update your software to the latest version</p>
+        </div>
+        <div>
+            <img src="https://support.oppo.com/content/dam/oppo/common/support/convenient-services/User-manual.svg" alt="">
+            <h2>User Guide</h2>
+            <p>Explore your phone with our easy user guide</p>
+        </div>
+        <div>
+            <img src="https://support.oppo.com/content/dam/oppo/common/support/convenient-services/Service-Policy.svg" alt="">
+            <h2>Warranty policy</h2>
+            <p>Know what is covered in our warranty policy</p>
+        </div>
+    </div>
+    <div class="service2">
+        <h1>Discover more OPPO Services</h1>
+        <p>Find the latest service information here</p>
+    </div>
+    <div class="premiunm">
+        <h2>OPPO Premium Service Available on Reno6 Series</h2>
+    </div>
+    <div class="IWSM">
+        <div class="IWS">
+            <h2>OPPO International Warranty Service (IWS)</h2>
+        </div>
+    </div>
+    <div class="service2" style="margin-top: 5%;">
+        <h1>O Happenings</h1>
+        <p style="margin-top: -6.5%; margin-bottom: 30px;">Find all updates on repair, activities and new services here.</p>
+        <a href="">Service</a>
+    </div>
+    <div class="IWSM">
+        <div class="IWS2">
+            <img src="https://support.oppo.com/content/dam/oppo/mm/support/o-happening/service/cover.jpg" alt="">
+            <h2>Unauthorized Repair VS Official Repair</h2>
+            <p>In every aspect, OPPO official repair should always be your first choice when it comes to...</p>
+            <a href="">See More ></a>
+        </div>
+    </div>
+    <div class="service2">
+        <h1>Popular Topics</h1>
+        <p>Check for Troubleshooting & How to Guide</p>
+    </div>
+    <div id="populartopics">
+        <div class="SoftwareUpdate">
+            <h2>Software Update</h2>
+            <h3>Update to Latest Software Through OTA</h3>
+            <p>Update to the newest software through OTA (Over-The-Air) and check what to do if you fail to receive, download or install OTA</p>
+            <img src="https://support.oppo.com/content/dam/oppo/en/support/popular-topics/FAQ.png" alt="">
+            <div class="footer">
+                <div>
+                    <span>1</span><span>/</span><span>2</span>
+                </div>
+                <div>
+                    <span>
+                        <img src="PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgb3BhY2l0eT0iMC4yNiI" alt="">
+                    </span>
+                    <span>
+                        <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0zMiAxNkMzMiAyNC43ODggMjQuODY5NCAzMiAxNiAzMkM3LjEzMDU5IDMyIDEuMjYwOThlLTA2IDI0Ljc4OCAyLjc5NzUzZS0wNiAxNkM0LjMzNDA3ZS0wNiA3LjIxMTk5IDcuMTMwNTkgMy4xNTQxZS0wNiAxNiA0LjcwNDg4ZS0wNkMyNC44Njk0IDYuMjU1NjVlLTA2IDMyIDcuMjEyIDMyIDE2Wk0xLjM2MTcgMTZDMS4zNjE3IDI0LjA2NTIgNy45MTE3NiAzMC42MzgzIDE2IDMwLjYzODNDMjQuMDg4MiAzMC42MzgzIDMwLjYzODMgMjQuMDY1MiAzMC42MzgzIDE2QzMwLjYzODMgNy45MzQ4MiAyNC4wODgyIDEuMzYxNyAxNiAxLjM2MTdDNy45MTE3NyAxLjM2MTcgMS4zNjE3MSA3LjkzNDgxIDEuMzYxNyAxNlpNMTkuMTYyMyAxMy43OTAzQzE4Ljg5NjQgMTMuNTI0NCAxOC44OTY0IDEzLjA5MzMgMTkuMTYyMyAxMi44Mjc0QzE5LjQyODIgMTIuNTYxNSAxOS44NTkzIDEyLjU2MTUgMjAuMTI1MiAxMi44Mjc0TDIzLjMzIDE2LjAzMjNMMjAuMTI1MiAxOS4yMzcxQzE5Ljg1OTMgMTkuNTAzIDE5LjQyODIgMTkuNTAzIDE5LjE2MjMgMTkuMjM3MUMxOC44OTY0IDE4Ljk3MTIgMTguODk2NCAxOC41NDAxIDE5LjE2MjMgMTguMjc0MkwyMC43ODUyIDE2LjY1MTRMOS40MzA0NiAxNi42NTE0QzkuMDU0NDMgMTYuNjUxNCA5LjA1NDQzIDE1LjI4OTcgOS40MzA0NiAxNS4yODk3TDIwLjY2MTcgMTUuMjg5N0wxOS4xNjIzIDEzLjc5MDNaIiBmaWxsPSJibGFjayIvPgo8L3N2Zz4K" alt="">
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="que">
+            <ul>
+                <li>
+                    <a href="">Advanced Camera Settings with ColorOS 11</a>
+                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNS43ODAzIDEyLjA2MDVMOC43ODAzMyAxOS4wNjA1TDcuNzE5NjcgMTcuOTk5OUwxNC4xODkzIDExLjUzMDJMNy43MTk2NyA1LjA2MDU1TDguNzgwMzMgMy45OTk4OUwxNS43ODAzIDEwLjk5OTlDMTYuMDczMiAxMS4yOTI4IDE2LjA3MzIgMTEuNzY3NyAxNS43ODAzIDEyLjA2MDVaIiBmaWxsPSJibGFjayIvPgo8L3N2Zz4K" alt="">
+                </li>
+                <li>
+                    <a href="">Tips on How to Make Battery Last All Day</a>
+                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNS43ODAzIDEyLjA2MDVMOC43ODAzMyAxOS4wNjA1TDcuNzE5NjcgMTcuOTk5OUwxNC4xODkzIDExLjUzMDJMNy43MTk2NyA1LjA2MDU1TDguNzgwMzMgMy45OTk4OUwxNS43ODAzIDEwLjk5OTlDMTYuMDczMiAxMS4yOTI4IDE2LjA3MzIgMTEuNzY3NyAxNS43ODAzIDEyLjA2MDVaIiBmaWxsPSJibGFjayIvPgo8L3N2Zz4K" alt="">
+                </li>
+                <li>
+                    <a href="">Manage End Call Option From Power Key in OPPO Watch</a>
+                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNS43ODAzIDEyLjA2MDVMOC43ODAzMyAxOS4wNjA1TDcuNzE5NjcgMTcuOTk5OUwxNC4xODkzIDExLjUzMDJMNy43MTk2NyA1LjA2MDU1TDguNzgwMzMgMy45OTk4OUwxNS43ODAzIDEwLjk5OTlDMTYuMDczMiAxMS4yOTI4IDE2LjA3MzIgMTEuNzY3NyAxNS43ODAzIDEyLjA2MDVaIiBmaWxsPSJibGFjayIvPgo8L3N2Zz4K" alt="">
+                </li>
+                <li>
+                    <a href="">Fix OPPO Phone Not Charging or Charging Slowly</a>
+                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNS43ODAzIDEyLjA2MDVMOC43ODAzMyAxOS4wNjA1TDcuNzE5NjcgMTcuOTk5OUwxNC4xODkzIDExLjUzMDJMNy43MTk2NyA1LjA2MDU1TDguNzgwMzMgMy45OTk4OUwxNS43ODAzIDEwLjk5OTlDMTYuMDczMiAxMS4yOTI4IDE2LjA3MzIgMTEuNzY3NyAxNS43ODAzIDEyLjA2MDVaIiBmaWxsPSJibGFjayIvPgo8L3N2Zz4K" alt="">
+                </li>
+                <li>
+                    <a href="">How to Back Up Your OPPO Phone</a>
+                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNS43ODAzIDEyLjA2MDVMOC43ODAzMyAxOS4wNjA1TDcuNzE5NjcgMTcuOTk5OUwxNC4xODkzIDExLjUzMDJMNy43MTk2NyA1LjA2MDU1TDguNzgwMzMgMy45OTk4OUwxNS43ODAzIDEwLjk5OTlDMTYuMDczMiAxMS4yOTI4IDE2LjA3MzIgMTEuNzY3NyAxNS43ODAzIDEyLjA2MDVaIiBmaWxsPSJibGFjayIvPgo8L3N2Zz4K" alt="">
+                </li>
+            </ul>
+        </div>
+    </div>
+    <p style="text-align: center;"><a href="">View More</a></p>
+    <div class="service2">
+        <h1>OPPO Service Center</h1>
+        <p>Need Repair? Locate OPPO Service Center</p>
+    </div>
+    <div id="scenter">
+        <div class="SCimg">
+            <img src="https://support.oppo.com/content/dam/oppo/common/support/service-center/service-center-en.jpg" alt=""/>
+        </div>
+        <div class="service-center">
+            <h3>OPPO's official Service Centers provide friendly, convenient and professional services including repairs, software updates, consultations, device inspection and much more.</h3>
+            <div class="footer1">
+               <span>
+                   <img src="https://support.oppo.com/content/dam/oppo/common/support/service-center/Repair-20210709.svg" alt="">
+                   <p>Repair</p>
+               </span>
+               <span>
+                    <img src="https://support.oppo.com/content/dam/oppo/common/support/service-center/Software-Updates.svg" alt="">
+                    <p>Software Updates</p>
+                </span>
+                <span>
+                    <img src="https://support.oppo.com/content/dam/oppo/common/support/service-center/Service-Inquiries.svg" alt="">
+                    <p>Service Inquiries</p>
+                </span>
+                <span>
+                    <img src="https://support.oppo.com/content/dam/oppo/common/support/service-center/Device-Diagnosis.svg" alt="">
+                    <p>Device Diagnosis</p>
+                </span>
+            </div>
+            <p>Locate Service Center</p>
+        </div>
+    </div>
+    <div class="service2">
+        <h1>Contact Us</h1>
+        <p>Reach OPPO Support Team for more help</p>
+    </div>
+    <div class="online-support">
+        <div class="online">
+            <h2>Online Support</h2>
+        </div>
+        <div class="contactdetails">
+            <div>
+                <h2><span><img src="https://support.oppo.com/content/dam/oppo/common/support/contact-us/phone.svg" alt=""></span>18001032777</h2>
+                <h3>9:00 – 19:00 Mon-Sun</h3>
+                <p>Including holidays</p>
+            </div>
+            <div>
+                <h2><img src="https://support.oppo.com/content/dam/oppo/common/support/contact-us/mail.svg" alt="">Email Us</h2>
+                <h3>support.in@oppo.com</h3>
+            </div>
+        </div>
+    </div>
+    <div class="Others">
+        <h2>Others</h2>
+        <h3><img src="https://support.oppo.com/content/dam/oppo/common/support/contact-us/Suggestions.svg" alt="">Survey</h3>
+        <p>Take a minute to make us better</p>
+    </div>
+    <div class="Others">
+        <h2>Social Media</h2>
+        <div>
+            <a href="https://api.whatsapp.com/send?phone=919871502777&text=&source=&data=&app_absent=" target="_blank"><img src="https://support.oppo.com/content/dam/oppo/common/support/contact-us/WhatsAPP.svg" alt=""></a>
+            <a href="https://www.facebook.com/OPPOCareIN/?brand_redir=1826516244270990" target="_blank"><img src="https://support.oppo.com/content/dam/oppo/common/support/contact-us/Facebook-solid.svg" alt=""></a>
+            <a href="https://twitter.com/OPPOCareIN" target="_blank"><img src="https://support.oppo.com/content/dam/oppo/common/support/contact-us/Twitter-solid.svg" alt=""></a>
+            <a href="https://www.instagram.com/oppoindia/" target="_blank"><img src="https://support.oppo.com/content/dam/oppo/common/support/contact-us/Instagram.svg" alt=""></a>
+            <a href="https://www.youtube.com/channel/UCMoJmRNcc-n8WdesyjQ6i_g" target="_blank"><img src="https://support.oppo.com/content/dam/oppo/common/support/contact-us/Youtube-solid.svg" alt=""></a>
+        </div>
+    </div>
+    <div class="contactpopup">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAALsSURBVHgB7ZntkdMwEIZfGP5fOjhRAaEDlZAOEBUQKkBUQKggdxUAFVyugoQKzlSQUAFo8S5aG9nROZEzw/mZ2bEk62NXWn3ZwMTExMRTxwZZYCDPMB4myCzIPMgrfs45jXgfZIULY4Msg6yDbIM8sPzqEHq34vAdBvACp0M9+A61G8xV+kHJJkgV5GeQHYd3/M5x/goXwCL28B51b5Ihs8zyhsvtOTwqHxAV98hXWnPDdawxMqI8+bnBcMjlZARHM0IrP6TX2xiMaITDeZUXqC4xYolCGMRl0eD8GBSe0OI6DuXwOLMrGcS1XXq/JORKMgoUtiyPxqDeGWXH3KN87wse6R3b5FZgECcUGfFFVWRQHqvau0PsSNIpa+HwXMCrNDmvzFEek2jfJ9I6EYu1teKbHuVxSI82tb/NKP83o0G98gjkSn2TmEbnE/rdjN6tj+QRt9H1Lrn9PTIQ33MctpzuOX7dUS5nN9X+3EV7pB+43A2XbfC8oxJymR2HZRQqfr5O5LeIvdp3u7L8pLzXHe3qthectwpyhfr43SBlwEFVckBUbKca76NrpTCt+MtEnrnSQce/cb1Vu0DKgArx+ner0g8dikgZYYc0FZo9mMo3a7Ul4a+ojckagXt+Wi54aFV6hbRyGw5/RjcfVZ5D4r0YsFf1ivL07jsycKgny4rjeu0/Nklz9ol5RtsCKW1Qr0J6QemlfR7RHDPgVBwSKw16zmFdk5h8n5RPnc1/oDy64xzqUbjFIzCIB7ilSqP4AuVYoOkqlvXIPgdpHJqHqi3KH+gM4kYnm95JF5wF/v0wtUQ5XKstMsLgDFjUxpS88hnEySrL5tkRHx3kkz3oS71DYTwG3JJ6IOVlfnmMhEc0wmE4FrHnPUbGoznZXH7RP4rrVWbwwnDq/wGD2pA3HKdNkA5p94hfpnVe+i9gEefPJshbXOjLtMagPjuJL/cJuYzHwM8lbU4dgRTyF0YuJ0KFeMeYmJiY+E/4DdHC/ni5IievAAAAAElFTkSuQmCC" alt="">
+    </div>
+    
+    <!-- footer -->
 
-       <!-- footer -->
-
-       <div id="footer">
+    <div id="footer">
         <div id="d1">
             <div class="footerdiv">
                 <h3>Smartphones</h3>
@@ -418,6 +533,7 @@
              
              <div id="social">
                 <div>
+                    
                     <a href="https://www.facebook.com/OPPOCareIN/?brand_redir=1826516244270990" target="_blank"><img src="https://support.oppo.com/content/dam/oppo/common/support/contact-us/Facebook-solid.svg" alt=""></a>
                     <a href="https://twitter.com/OPPOCareIN" target="_blank"><img src="https://support.oppo.com/content/dam/oppo/common/support/contact-us/Twitter-solid.svg" alt=""></a>
                     <a href="https://www.instagram.com/oppoindia/" target="_blank"><img src="https://support.oppo.com/content/dam/oppo/common/support/contact-us/Instagram.svg" alt=""></a>
@@ -425,26 +541,31 @@
                 </div>
             </div>
             <div id="lastdiv">
-                <p>Privacy</p>
-                <p>Terms of Use</p>
-                <p>India(English)</p>
+                <div>
+                    <p>Privacy</p>
+                    <p>Terms of Use</p>
+                    <p>Copyright © 2004-2022 OPPO. All rights reserved.</p>
+                </div>
+                <div>
+                    <p>India(English)</p>
+                </div>
             </div>
-            <p>Copyright © 2004-2022 OPPO. All rights reserved.</p>
         </div>
     </div>
 
 </body>
 </html>
+
 <script>
- var shopsitems=JSON.parse(localStorage.getItem("shops"))
- shopsitems.map(function(el){
-     var head= document.querySelector("h1")
-     head.innerText=el.heading 
-     document.querySelector(".address").innerText=el.address
-     document.querySelector(".mobile").innerText=el.mobile
-     document.querySelector(".time").innerText=el.time
-     document.querySelector("#store").href=el.store
+    function hidefun() {
+  var x = document.getElementById("hidenshowemail");
+  x.innerText="18001032777";
 
+}
 
- })
+function hideshowfun()
+{
+    var x = document.getElementById("hidenshowemail");
+  x.innerText="support.in@oppo.com";
+}
 </script>

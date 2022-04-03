@@ -19,6 +19,57 @@
 
 
     <title>Info</title>
+    <style>
+         #paymentstripe{
+            display: flex;
+            justify-content: end;
+            align-items: center;
+        width:100%;
+        height:50px;
+        background-color: white;
+    }
+    #paymentstripe button{
+        height:50px;
+        font-size: 25px;
+        padding-left: 40px;
+        padding-right:40px
+    }
+    #paymentstripe button:nth-child(2){
+       background-color: black;
+       color:white;
+        
+        border:none;
+        
+    }
+    #paymentstripe button:nth-child(3){
+       background-color: green;
+       color:white;
+       
+        border:none;
+        margin-left: -4px;
+        
+    }
+    #buyingpricefinal{
+        font-size: 25px;
+        display:inline;
+        padding-right:25px
+    }
+    #paymentstripe div{
+       padding-right: 25px;
+    }
+    #paymentstripe{
+      
+    background: #fafafa;
+    position: fixed;
+    width: 100%;
+    height: 64px;
+    bottom: 0;
+    left: 0;
+    border: 1px solid #f2f2f2;
+    z-index: 6;
+
+    }
+    </style>
 </head>
 
 <body>
@@ -284,14 +335,14 @@
 
         <div id="img-info">
             
-            <img src="https://opsg-img-cdn-gl.heytapimg.com/epb/202203/11/ktjAZGPwTWmISWQq.jpg" alt="">
-            <p>OPPO K10</p>
+            <img src="https://opsg-img-cdn-gl.heytapimg.com/epb/202203/11/ktjAZGPwTWmISWQq.jpg" alt="" class="productimage">
+            <p class="name">OPPO K10</p>
             <p>21% OFF</p>
         </div>
 
         <div id="price">
-            <p>₹14,990</p>
-            <p>₹18,999</p>
+            <p class="offprice">14990</p>
+            <p class="strikeprice">18999</p>
         </div>
         <hr id="hr1">
         <h3 id="h3-1">Special Offers</h3>
@@ -538,7 +589,12 @@
                 <img src="https://opsg-img-cdn-gl.heytapimg.com/epb/202203/22/MCTH5yVUZ0QXJynR.jpg" alt="">
                 <img src="https://opsg-img-cdn-gl.heytapimg.com/epb/202203/22/ZIvcMKDg4Pfm47TG.jpg" alt="">
             </div>
-    
+            <div id="paymentstripe">
+                <div><p id="buyingpricefinal">11,000</p><br>
+                    <span><s>19,000</s></span>&nbsp<span>(inc. all taxes)</span></div>
+             <button onclick="addtocartfun()">Add to Cart </button>
+             <button onclick="location.href='checkoutmain.html'">Buy Now</button>
+            </div>
                 <!-- ooterstart -->
                 
     <div id="footer">
@@ -648,20 +704,41 @@
 
 </html>
 
-<!-- <script>
-    function myFunction() {
-  var dots = document.getElementById("dots");
-  var moreText = document.getElementById("more");
-  var btnText = document.getElementById("myBtn");
+<script>
+//     function myFunction() {
+//   var dots = document.getElementById("dots");
+//   var moreText = document.getElementById("more");
+//   var btnText = document.getElementById("myBtn");
 
-  if (dots.style.display === "none") {
-    dots.style.display = "inline";
-    btnText.innerHTML = "Read more";
-    moreText.style.display = "none";
-  } else {
-    dots.style.display = "none";
-    btnText.innerHTML = "Read less";
-    moreText.style.display = "inline";
-  }
-}
-</script> -->
+//   if (dots.style.display === "none") {
+//     dots.style.display = "inline";
+//     btnText.innerHTML = "Read more";
+//     moreText.style.display = "none";
+//   } else {
+//     dots.style.display = "none";
+//     btnText.innerHTML = "Read less";
+//     moreText.style.display = "inline";
+//   }
+// }
+
+var productinfo = []
+
+    function addtocartfun(){
+        // console.log("inside my function")
+        var name = document.querySelector(".name").innerText
+        var price=document.querySelector(".offprice").innerText
+        var strikeoff=document.querySelector(".strikeprice").innerText
+        var image=document.querySelector(".productimage").src
+        // console.log(price,strikeoff,image)
+        var product={
+            name:name,
+            price:price,
+            strikeoff:strikeoff,
+            image:image,
+        }
+       productinfo.push(product) 
+       localStorage.setItem("productdetail",JSON.stringify(productinfo))
+    //    localStorage.clear()
+        productinfo =[]
+    }
+</script>

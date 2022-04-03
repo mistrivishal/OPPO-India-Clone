@@ -7,10 +7,10 @@
     <title>store locator</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <style>
          *{
-            font-family: 'Open Sans', sans-serif;
+            font-family: 'Nunito Sans', sans-serif;
         }
 
         #showelements{
@@ -105,16 +105,12 @@
            margin-top: 25px;
        }
     </style>
-    <link rel="stylesheet" href="./Vishal/vishal.css">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="navigation.css">
+    <link rel="stylesheet" href="footer.css">
 </head>
 <body>
-    <div class="siteOrigin">
-        <span>Select your country or region:</span>
-        <a href="index.html"><span class="Stay">Stay on current site</span></a>
-        <a href="choosesite.html"><span class="Select">Select another site</span></a>
-    </div>
-    <div id="navbar">
+   
+    <div id="navbar" style="margin-top:0px">
         <div class="logo">
             <a href="index.html"><img src="https://logo-base.com/logo/oppo_logo_black_png_white.png" alt=""/></a>
         </div>
@@ -484,12 +480,22 @@
     </div>
     <div id="d2">
         <div id="d21">
-            <div><h4>Email</h4></div>
-            <div><h4>Hotline</h4></div>
-            
-           
+            <div><h4 onclick="hideshowfun()">Email</h4></div>
+            <div><h4 onclick="hidefun()">Hotline</h4></div>
         </div>
-         <h4>support.in@oppo.com</h4> 
+        <div id="hidenshowemail">
+            <p>support.in@oppo.com</p>
+        </div>
+         
+         <div id="social">
+            <div>
+                
+                <a href="https://www.facebook.com/OPPOCareIN/?brand_redir=1826516244270990" target="_blank"><img src="https://support.oppo.com/content/dam/oppo/common/support/contact-us/Facebook-solid.svg" alt=""></a>
+                <a href="https://twitter.com/OPPOCareIN" target="_blank"><img src="https://support.oppo.com/content/dam/oppo/common/support/contact-us/Twitter-solid.svg" alt=""></a>
+                <a href="https://www.instagram.com/oppoindia/" target="_blank"><img src="https://support.oppo.com/content/dam/oppo/common/support/contact-us/Instagram.svg" alt=""></a>
+                <a href="https://www.youtube.com/channel/UCMoJmRNcc-n8WdesyjQ6i_g" target="_blank"><img src="https://support.oppo.com/content/dam/oppo/common/support/contact-us/Youtube-solid.svg" alt=""></a>
+            </div>
+        </div>
         <div id="lastdiv">
             <p>Privacy</p>
             <p>Terms of Use</p>
@@ -497,7 +503,7 @@
         </div>
         <p>Copyright © 2004-2022 OPPO. All rights reserved.</p>
     </div>
-</div>  
+</div>
 </body>
 </html>
 <script>
