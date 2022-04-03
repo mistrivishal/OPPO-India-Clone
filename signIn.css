@@ -67,6 +67,7 @@
     }
     #detailsdiv2{
         margin-top: 30px;
+        display:block;
     }
     #Password{
         border-right: 1px solid grey;
@@ -210,6 +211,7 @@
         width: 79%;
         margin: auto;
         margin-top: 20px;
+        display: none;
      }
      #passcode{
         display: flex;
