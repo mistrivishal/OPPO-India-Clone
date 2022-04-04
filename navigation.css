@@ -64,6 +64,7 @@ a>.Stay,.Select{
     font-size: 16px;
     padding: 20px;
     box-sizing: border-box;
+    z-index: 1;
 }
 .logo{
     width: 10%;
