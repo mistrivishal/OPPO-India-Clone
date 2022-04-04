@@ -462,7 +462,7 @@ a
     /* border: 1px solid red; */
     display: flex;
     margin-top: 30px;
-
+    margin-left: 8%;
 }
 #subp
 {
@@ -516,7 +516,7 @@ a
 {
     display: flex;
     box-sizing: border-box;
-    margin-left: 310px;
+    margin-left: 31%;
 }
 #stay1>button{
     border: 1px solid 
@@ -534,6 +534,9 @@ a
 {
     color: grey;
     font-size: 12px;
+}
+.bysub{
+    margin-left: 16%;
 }
 #stayintouch>div:last-child{
     font-size: 12px;
