@@ -6,7 +6,7 @@ Guangdong Oppo Mobile Telecommunications Corp., Ltd, doing business as OPPO is a
 ## Project Objective
 
 This Project is developed by our team for the construct week of Unit-2 in Masai School.
-Netlify Link of our Project - https://oppoindiaclone.netlify.app
+Netlify Link of our Project - https://oppoindiaclone.netlify.app/
 
 
 ## Authors
