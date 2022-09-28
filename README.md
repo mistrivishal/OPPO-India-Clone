@@ -15,7 +15,7 @@ Netlify Link of our Project - https://oppoindiaclone.netlify.app/
 - Vishal Mistri
 - Ravi Dhamne
 - Sanjay Kushawaha
-- Ankita Shrivastava
+- Ankita Srivastava
 
 
 
